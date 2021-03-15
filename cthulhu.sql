@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS personaje;
 DROP TABLE IF EXISTS habilidades ;
 DROP TABLE IF EXISTS equipo;
+DROP TABLE IF EXISTS equipado;
 
 
 CREATE TABLE personaje (
@@ -70,3 +71,23 @@ tasacion INT NOT NULL DEFAULT 5,
 trepar INT NOT NULL DEFAULT 20
 FOREIGN KEY (idjugador) REFERENCES personaje(id)
 );
+
+CREATE TABLE equipo (
+id_arma INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+nombre CHAR NOT NULL,
+daño CHAR NOT NULL,
+alcance CHAR NOT NULL,
+num_ataques CHAR NOT NULL,
+municion INT NOT NULL,
+averia INT NOT NULL);
+
+CREATE TABLE equipado (
+id_personaje INT NOT NULL,
+id_arma INT NOT NULL,
+dificultad_normal INT NOT NULL,
+dificultad_dificil INT NOT NULL,
+dificultad_extrema INT NOT NULL,
+PRIMARY KEY (id_personaje,id_arma));
+
+ALTER TABLE equipado ADD CONSTRAINT equipado_id_personaje_personaje_id FOREIGN KEY (id_personaje) REFERENCES personaje(id);
+ALTER TABLE equipado ADD CONSTRAINT equipado_Id_equipo_equipo_id_arma FOREIGN KEY (id_arma) REFERENCES equipo(id_arma);

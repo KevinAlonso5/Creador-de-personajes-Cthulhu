@@ -77,7 +77,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
         /// <param name="numHab">El parametro es la localizacion que tiene la habilidada en el ArrayList.</param>
         /// <param name="entrada">Indica el numericUpDown con el que se a interactuado.</param>
         /// 
-        private void cambiosHabilidades(int numHab, NumericUpDown entrada)
+        private void cambiosHabilidades(int numHab, NumericUpDown entrada, CheckBox checBoxEntrada)
         {
             int ValCambiado = Convert.ToInt32(entrada.Value);
             int ValHabilidad = Convert.ToInt32(valHab[numHab]);
@@ -86,9 +86,8 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
 
             if (ValCambiado > ValHabilidad && comprobador)
             {
-                MessageBox.Show("entra en el primer if");
                 int restado = (ValCambiado - ValHabilidad);
-                if (lbPunTrabajo.Checked)
+                if ((lbPunTrabajo.Checked) &&(checBoxEntrada.Checked))
                 {
                     lbPunTrabajo.Text = Convert.ToInt32(lbPunTrabajo.Text) - restado + "";
                 }
@@ -487,6 +486,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             esquivarNumericUpDown.Value = Convert.ToInt32(lbDificilDes.Text);
 
             comprobarTrabajo();
+            AsignarDificultad();
         }
 
 
@@ -494,221 +494,224 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
         /// cuando modificas los NumericUpDown
         private void antropologuiaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(0, antropologuiaNumericUpDown);
+            cambiosHabilidades(0, antropologuiaNumericUpDown, cbAntropologuia);
         }
 
         private void armacortaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(1, armacortaNumericUpDown);
+            cambiosHabilidades(1, armacortaNumericUpDown, cbArmaCorta);
+            AsignarDificultad();
         }
 
         private void fusilYescopetaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(2, armacortaNumericUpDown);
+            cambiosHabilidades(2, armacortaNumericUpDown, cbRiflesEscopetas);
+            AsignarDificultad();
         }
 
         private void arqueologuiaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(3, armacortaNumericUpDown);
+            cambiosHabilidades(3, armacortaNumericUpDown, cbArqueologuia);
         }
         private void arteYartesaniaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(4, arteYartesaniaNumericUpDown);
+            cambiosHabilidades(4, arteYartesaniaNumericUpDown, cbArte);
         }
 
         private void buscarlibrosNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(5, buscarlibrosNumericUpDown);
+            cambiosHabilidades(5, buscarlibrosNumericUpDown, cbBuscarlibros);
         }
 
         private void cerrajeriaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(6, cerrajeriaNumericUpDown);
+            cambiosHabilidades(6, cerrajeriaNumericUpDown, cbCerrajeria);
         }
 
         private void charlataneriaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(7, charlataneriaNumericUpDown);
+            cambiosHabilidades(7, charlataneriaNumericUpDown, cbCharlataneria);
         }
 
         private void cienciaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(8, cienciaNumericUpDown);
+            cambiosHabilidades(8, cienciaNumericUpDown, cbCiencia);
         }
 
         private void cienciasocultasNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(9, cienciasocultasNumericUpDown);
+            cambiosHabilidades(9, cienciasocultasNumericUpDown, cbCienciasOcultas);
         }
 
         private void peleaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(10, peleaNumericUpDown);
+            cambiosHabilidades(10, peleaNumericUpDown, cbPelea);
+            AsignarDificultad();
         }
 
         private void conducirautomovilNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(11, conducirautomovilNumericUpDown);
+            cambiosHabilidades(11, conducirautomovilNumericUpDown, cbConducirAutomovil);
         }
 
         private void conducirmaquinariaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(12, conducirmaquinariaNumericUpDown);
+            cambiosHabilidades(12, conducirmaquinariaNumericUpDown, cbConducirMaquinaria);
         }
 
         private void contavilidadNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(13, contavilidadNumericUpDown);
+            cambiosHabilidades(13, contavilidadNumericUpDown, cbContavilidad);
         }
 
         private void creditoNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(14, conducirmaquinariaNumericUpDown);
+            cambiosHabilidades(14, conducirmaquinariaNumericUpDown, cbCredito);
         }
 
         private void derechoNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(15, creditoNumericUpDown);
+            cambiosHabilidades(15, creditoNumericUpDown, cbDerecho);
         }
 
         private void descubrirNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(16, descubrirNumericUpDown);
+            cambiosHabilidades(16, descubrirNumericUpDown, cbDescubrir);
         }
 
         private void disfrazarseNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(17, disfrazarseNumericUpDown);
+            cambiosHabilidades(17, disfrazarseNumericUpDown, cbDisfrazarse);
         }
 
         private void electricidadNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(18, electricidadNumericUpDown);
+            cambiosHabilidades(18, electricidadNumericUpDown, cbElectricidad);
         }
 
         private void encantoNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(19, encantoNumericUpDown);
+            cambiosHabilidades(19, encantoNumericUpDown, cbEncanto);
         }
 
         private void equitacionNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(20, equitacionNumericUpDown);
+            cambiosHabilidades(20, equitacionNumericUpDown, cbEquitacion);
         }
 
         private void escucharNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(21, escucharNumericUpDown);
+            cambiosHabilidades(21, escucharNumericUpDown, cbEscuchar);
         }
 
         private void esquivarNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(22, esquivarNumericUpDown);
+            cambiosHabilidades(22, esquivarNumericUpDown, cbEsquivar);
         }
 
         private void historiaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(23, historiaNumericUpDown);
+            cambiosHabilidades(23, historiaNumericUpDown,cbHistoria);
         }
 
         private void intimidarNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(24, intimidarNumericUpDown);
+            cambiosHabilidades(24, intimidarNumericUpDown,cbIntimidar);
         }
 
         private void juegomanosNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(25, juegomanosNumericUpDown);
+            cambiosHabilidades(25, juegomanosNumericUpDown, cbJuegoManos);
         }
 
         private void lanzarNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(26, lanzarNumericUpDown);
+            cambiosHabilidades(26, lanzarNumericUpDown, cbLanzar);
         }
 
         private void mecanicaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(27, mecanicaNumericUpDown);
+            cambiosHabilidades(27, mecanicaNumericUpDown, cbMecanica);
         }
 
         private void medicinaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(28, medicinaNumericUpDown);
+            cambiosHabilidades(28, medicinaNumericUpDown, cbMedicina);
         }
 
         private void mitoscthulhuNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(29, mitoscthulhuNumericUpDown);
+            cambiosHabilidades(29, mitoscthulhuNumericUpDown, cbMitosCth);
         }
 
         private void nadarNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(30, nadarNumericUpDown);
+            cambiosHabilidades(30, nadarNumericUpDown, cbNadar);
         }
 
         private void naturalezaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(31, naturalezaNumericUpDown);
+            cambiosHabilidades(31, naturalezaNumericUpDown, cbNaturaleza);
         }
 
         private void orientarseNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(32, orientarseNumericUpDown);
+            cambiosHabilidades(32, orientarseNumericUpDown, cbOrientarse);
         }
 
         private void persuasionNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(33, persuasionNumericUpDown);
+            cambiosHabilidades(33, persuasionNumericUpDown, cbPersuasion);
         }
 
         private void pilotarNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(34, pilotarNumericUpDown);
+            cambiosHabilidades(34, pilotarNumericUpDown, cbPilotar);
         }
 
         private void primerosauxiliosNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(35, primerosauxiliosNumericUpDown);
+            cambiosHabilidades(35, primerosauxiliosNumericUpDown, cbPrimerosAuxilios);
         }
 
         private void psicoanalisisNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(36, psicoanalisisNumericUpDown);
+            cambiosHabilidades(36, psicoanalisisNumericUpDown, cbPsicoanalisis);
         }
 
         private void psicologuiaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(37, psicologuiaNumericUpDown);
+            cambiosHabilidades(37, psicologuiaNumericUpDown, cbPsicologuia);
         }
 
         private void saltarNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(38, saltarNumericUpDown);
+            cambiosHabilidades(38, saltarNumericUpDown, cbSaltar);
         }
 
         private void seguirrastoNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(39, seguirrastoNumericUpDown);
+            cambiosHabilidades(39, seguirrastoNumericUpDown, cbSeguirRasto);
         }
 
         private void sigiloNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(40, sigiloNumericUpDown);
+            cambiosHabilidades(40, sigiloNumericUpDown, cbSigilo);
         }
 
         private void supervivenciaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(41, supervivenciaNumericUpDown);
+            cambiosHabilidades(41, supervivenciaNumericUpDown, cbSupervivencia);
         }
 
         private void tasacionNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(42, tasacionNumericUpDown);
+            cambiosHabilidades(42, tasacionNumericUpDown, cbTasacion);
         }
 
         private void treparNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(43, treparNumericUpDown);
+            cambiosHabilidades(43, treparNumericUpDown, cbTrepar);
         }
 
         /// <summary>
@@ -757,13 +760,52 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
                     Convert.ToInt32(saltarNumericUpDown.Value), Convert.ToInt32(seguirrastoNumericUpDown.Value),
                     Convert.ToInt32(sigiloNumericUpDown.Value), Convert.ToInt32(supervivenciaNumericUpDown.Value),
                     Convert.ToInt32(tasacionNumericUpDown.Value), Convert.ToInt32(treparNumericUpDown.Value));
+
+                equipadoTableAdapter.Insert(Convert.ToInt32(personajeTableAdapter.GetOnId()), Convert.ToInt32(id_armaTextBox.Text),
+                    Convert.ToInt32(lbDificulNormal.Text), Convert.ToInt32(lbDificulDificil.Text), Convert.ToInt32(lbDificulExtremo.Text));
+
             }
 
         }
 
         private void Cthulhu_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'llamada_de_cthulhuDataSet.equipado' Puede moverla o quitarla según sea necesario.
+            this.equipadoTableAdapter.Fill(this.llamada_de_cthulhuDataSet.equipado);
+            // TODO: esta línea de código carga datos en la tabla 'llamada_de_cthulhuDataSet.equipo' Puede moverla o quitarla según sea necesario.
+            this.equipoTableAdapter.Fill(this.llamada_de_cthulhuDataSet.equipo);
 
+            AsignarDificultad();
+
+        }
+
+        private void nombreComboBox_ValueMemberChanged(object sender, EventArgs e)
+        {
+            AsignarDificultad();
+        }
+        /// <summary>
+        /// Este metodo permite que se asigne la difultad de cada arma de forma automatica
+        /// </summary>
+        private void AsignarDificultad()
+        {
+            switch (corto_largoTextBox.Text)
+            {
+                case "0":
+                    lbDificulNormal.Text = armacortaNumericUpDown.Value + "";
+                    lbDificulDificil.Text = Convert.ToInt32(armacortaNumericUpDown.Value / 2) + "";
+                    lbDificulExtremo.Text = Convert.ToInt32(armacortaNumericUpDown.Value / 5) + "";
+                    break;
+                case "1":
+                    lbDificulNormal.Text = fusilYescopetaNumericUpDown.Value + "";
+                    lbDificulDificil.Text = Convert.ToInt32(fusilYescopetaNumericUpDown.Value / 2) + "";
+                    lbDificulExtremo.Text = Convert.ToInt32(fusilYescopetaNumericUpDown.Value / 5) + "";
+                    break;
+                case "2":
+                    lbDificulNormal.Text = peleaNumericUpDown.Value + "";
+                    lbDificulDificil.Text = Convert.ToInt32(peleaNumericUpDown.Value / 2) + "";
+                    lbDificulExtremo.Text = Convert.ToInt32(peleaNumericUpDown.Value / 5) + "";
+                    break;
+            }
         }
     }
 }

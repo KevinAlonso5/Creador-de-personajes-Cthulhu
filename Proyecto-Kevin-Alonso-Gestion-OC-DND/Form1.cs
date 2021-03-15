@@ -164,6 +164,12 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             this.LayoutMdi(MdiLayout.TileVertical);
         }
 
+        private void añadirArmaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            añadirArma añadirarma = new añadirArma();
+            añadirarma.MdiParent = this;
+            añadirarma.Show();
+        }
     }
 
 }

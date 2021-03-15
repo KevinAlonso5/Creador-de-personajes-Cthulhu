@@ -30,6 +30,15 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label nombreLabel;
+            System.Windows.Forms.Label dañoLabel;
+            System.Windows.Forms.Label alcanceLabel;
+            System.Windows.Forms.Label num_ataquesLabel;
+            System.Windows.Forms.Label municionLabel;
+            System.Windows.Forms.Label averiaLabel;
+            System.Windows.Forms.Label dificultad_normalLabel;
+            System.Windows.Forms.Label dificultad_dificilLabel;
+            System.Windows.Forms.Label dificultad_extremaLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cthulhu));
             this.tbJugador = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -202,6 +211,32 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             this.tableAdapterManager = new Proyecto_Kevin_Alonso_Gestion_OC_DND.llamada_de_cthulhuDataSetTableAdapters.TableAdapterManager();
             this.habilidadesTableAdapter = new Proyecto_Kevin_Alonso_Gestion_OC_DND.llamada_de_cthulhuDataSetTableAdapters.habilidadesTableAdapter();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.equipoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.equipoTableAdapter = new Proyecto_Kevin_Alonso_Gestion_OC_DND.llamada_de_cthulhuDataSetTableAdapters.equipoTableAdapter();
+            this.nombreComboBox = new System.Windows.Forms.ComboBox();
+            this.dañoLabel1 = new System.Windows.Forms.Label();
+            this.alcanceLabel1 = new System.Windows.Forms.Label();
+            this.num_ataquesLabel1 = new System.Windows.Forms.Label();
+            this.municionLabel1 = new System.Windows.Forms.Label();
+            this.averiaLabel1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.equipadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.id_armaTextBox = new System.Windows.Forms.TextBox();
+            this.equipadoTableAdapter = new Proyecto_Kevin_Alonso_Gestion_OC_DND.llamada_de_cthulhuDataSetTableAdapters.equipadoTableAdapter();
+            this.corto_largoTextBox = new System.Windows.Forms.TextBox();
+            this.lbDificulNormal = new System.Windows.Forms.Label();
+            this.lbDificulDificil = new System.Windows.Forms.Label();
+            this.lbDificulExtremo = new System.Windows.Forms.Label();
+            this.equipadoIdequipoequipoidarmaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            nombreLabel = new System.Windows.Forms.Label();
+            dañoLabel = new System.Windows.Forms.Label();
+            alcanceLabel = new System.Windows.Forms.Label();
+            num_ataquesLabel = new System.Windows.Forms.Label();
+            municionLabel = new System.Windows.Forms.Label();
+            averiaLabel = new System.Windows.Forms.Label();
+            dificultad_normalLabel = new System.Windows.Forms.Label();
+            dificultad_dificilLabel = new System.Windows.Forms.Label();
+            dificultad_extremaLabel = new System.Windows.Forms.Label();
             this.gbHabilidades.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.treparNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tasacionNumericUpDown)).BeginInit();
@@ -263,18 +298,85 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             ((System.ComponentModel.ISupportInitialize)(this.personajeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.llamada_de_cthulhuDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.habilidadesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipoBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.equipadoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipadoIdequipoequipoidarmaBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // nombreLabel
+            // 
+            nombreLabel.AutoSize = true;
+            nombreLabel.Location = new System.Drawing.Point(106, 23);
+            nombreLabel.Name = "nombreLabel";
+            nombreLabel.Size = new System.Drawing.Size(45, 13);
+            nombreLabel.TabIndex = 55;
+            nombreLabel.Text = "nombre:";
+            // 
+            // dañoLabel
+            // 
+            dañoLabel.AutoSize = true;
+            dañoLabel.Location = new System.Drawing.Point(215, 16);
+            dañoLabel.Name = "dañoLabel";
+            dañoLabel.Size = new System.Drawing.Size(34, 13);
+            dañoLabel.TabIndex = 56;
+            dañoLabel.Text = "daño:";
+            // 
+            // alcanceLabel
+            // 
+            alcanceLabel.AutoSize = true;
+            alcanceLabel.Location = new System.Drawing.Point(321, 16);
+            alcanceLabel.Name = "alcanceLabel";
+            alcanceLabel.Size = new System.Drawing.Size(48, 13);
+            alcanceLabel.TabIndex = 57;
+            alcanceLabel.Text = "alcance:";
+            // 
+            // num_ataquesLabel
+            // 
+            num_ataquesLabel.AutoSize = true;
+            num_ataquesLabel.Location = new System.Drawing.Point(427, 16);
+            num_ataquesLabel.Name = "num_ataquesLabel";
+            num_ataquesLabel.Size = new System.Drawing.Size(71, 13);
+            num_ataquesLabel.TabIndex = 58;
+            num_ataquesLabel.Text = "num ataques:";
+            // 
+            // municionLabel
+            // 
+            municionLabel.AutoSize = true;
+            municionLabel.Location = new System.Drawing.Point(533, 16);
+            municionLabel.Name = "municionLabel";
+            municionLabel.Size = new System.Drawing.Size(52, 13);
+            municionLabel.TabIndex = 59;
+            municionLabel.Text = "municion:";
+            // 
+            // averiaLabel
+            // 
+            averiaLabel.AutoSize = true;
+            averiaLabel.Location = new System.Drawing.Point(639, 16);
+            averiaLabel.Name = "averiaLabel";
+            averiaLabel.Size = new System.Drawing.Size(39, 13);
+            averiaLabel.TabIndex = 60;
+            averiaLabel.Text = "averia:";
+            // 
+            // dificultad_normalLabel
+            // 
+            dificultad_normalLabel.AutoSize = true;
+            dificultad_normalLabel.Location = new System.Drawing.Point(727, 16);
+            dificultad_normalLabel.Name = "dificultad_normalLabel";
+            dificultad_normalLabel.Size = new System.Drawing.Size(86, 13);
+            dificultad_normalLabel.TabIndex = 62;
+            dificultad_normalLabel.Text = "dificultad normal:";
             // 
             // tbJugador
             // 
-            this.tbJugador.Location = new System.Drawing.Point(956, 212);
+            this.tbJugador.Location = new System.Drawing.Point(123, 604);
             this.tbJugador.Name = "tbJugador";
             this.tbJugador.Size = new System.Drawing.Size(100, 20);
             this.tbJugador.TabIndex = 54;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(981, 238);
+            this.btnGuardar.Location = new System.Drawing.Point(242, 602);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 53;
@@ -378,7 +480,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             this.gbHabilidades.Controls.Add(this.antropologuiaNumericUpDown);
             this.gbHabilidades.Location = new System.Drawing.Point(12, 190);
             this.gbHabilidades.Name = "gbHabilidades";
-            this.gbHabilidades.Size = new System.Drawing.Size(792, 364);
+            this.gbHabilidades.Size = new System.Drawing.Size(1044, 328);
             this.gbHabilidades.TabIndex = 52;
             this.gbHabilidades.TabStop = false;
             this.gbHabilidades.Text = "Habilidades del invetigador";
@@ -386,7 +488,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbTrepar
             // 
             this.cbTrepar.AutoSize = true;
-            this.cbTrepar.Location = new System.Drawing.Point(612, 123);
+            this.cbTrepar.Location = new System.Drawing.Point(838, 207);
             this.cbTrepar.Name = "cbTrepar";
             this.cbTrepar.Size = new System.Drawing.Size(57, 17);
             this.cbTrepar.TabIndex = 191;
@@ -396,7 +498,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbSupervivencia
             // 
             this.cbSupervivencia.AutoSize = true;
-            this.cbSupervivencia.Location = new System.Drawing.Point(612, 72);
+            this.cbSupervivencia.Location = new System.Drawing.Point(838, 156);
             this.cbSupervivencia.Name = "cbSupervivencia";
             this.cbSupervivencia.Size = new System.Drawing.Size(94, 17);
             this.cbSupervivencia.TabIndex = 190;
@@ -406,7 +508,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbSigilo
             // 
             this.cbSigilo.AutoSize = true;
-            this.cbSigilo.Location = new System.Drawing.Point(612, 47);
+            this.cbSigilo.Location = new System.Drawing.Point(838, 131);
             this.cbSigilo.Name = "cbSigilo";
             this.cbSigilo.Size = new System.Drawing.Size(51, 17);
             this.cbSigilo.TabIndex = 189;
@@ -416,7 +518,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbSeguirRasto
             // 
             this.cbSeguirRasto.AutoSize = true;
-            this.cbSeguirRasto.Location = new System.Drawing.Point(612, 22);
+            this.cbSeguirRasto.Location = new System.Drawing.Point(838, 106);
             this.cbSeguirRasto.Name = "cbSeguirRasto";
             this.cbSeguirRasto.Size = new System.Drawing.Size(82, 17);
             this.cbSeguirRasto.TabIndex = 188;
@@ -426,7 +528,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbTasacion
             // 
             this.cbTasacion.AutoSize = true;
-            this.cbTasacion.Location = new System.Drawing.Point(612, 97);
+            this.cbTasacion.Location = new System.Drawing.Point(838, 181);
             this.cbTasacion.Name = "cbTasacion";
             this.cbTasacion.Size = new System.Drawing.Size(70, 17);
             this.cbTasacion.TabIndex = 53;
@@ -436,7 +538,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbSaltar
             // 
             this.cbSaltar.AutoSize = true;
-            this.cbSaltar.Location = new System.Drawing.Point(411, 332);
+            this.cbSaltar.Location = new System.Drawing.Point(838, 83);
             this.cbSaltar.Name = "cbSaltar";
             this.cbSaltar.Size = new System.Drawing.Size(53, 17);
             this.cbSaltar.TabIndex = 187;
@@ -446,7 +548,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbPsicologuia
             // 
             this.cbPsicologuia.AutoSize = true;
-            this.cbPsicologuia.Location = new System.Drawing.Point(411, 306);
+            this.cbPsicologuia.Location = new System.Drawing.Point(838, 57);
             this.cbPsicologuia.Name = "cbPsicologuia";
             this.cbPsicologuia.Size = new System.Drawing.Size(80, 17);
             this.cbPsicologuia.TabIndex = 186;
@@ -456,7 +558,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbPsicoanalisis
             // 
             this.cbPsicoanalisis.AutoSize = true;
-            this.cbPsicoanalisis.Location = new System.Drawing.Point(411, 280);
+            this.cbPsicoanalisis.Location = new System.Drawing.Point(838, 31);
             this.cbPsicoanalisis.Name = "cbPsicoanalisis";
             this.cbPsicoanalisis.Size = new System.Drawing.Size(86, 17);
             this.cbPsicoanalisis.TabIndex = 185;
@@ -466,7 +568,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbPrimerosAuxilios
             // 
             this.cbPrimerosAuxilios.AutoSize = true;
-            this.cbPrimerosAuxilios.Location = new System.Drawing.Point(411, 254);
+            this.cbPrimerosAuxilios.Location = new System.Drawing.Point(651, 237);
             this.cbPrimerosAuxilios.Name = "cbPrimerosAuxilios";
             this.cbPrimerosAuxilios.Size = new System.Drawing.Size(103, 17);
             this.cbPrimerosAuxilios.TabIndex = 184;
@@ -476,7 +578,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbPilotar
             // 
             this.cbPilotar.AutoSize = true;
-            this.cbPilotar.Location = new System.Drawing.Point(411, 228);
+            this.cbPilotar.Location = new System.Drawing.Point(651, 213);
             this.cbPilotar.Name = "cbPilotar";
             this.cbPilotar.Size = new System.Drawing.Size(55, 17);
             this.cbPilotar.TabIndex = 183;
@@ -486,7 +588,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbPersuasion
             // 
             this.cbPersuasion.AutoSize = true;
-            this.cbPersuasion.Location = new System.Drawing.Point(411, 204);
+            this.cbPersuasion.Location = new System.Drawing.Point(651, 189);
             this.cbPersuasion.Name = "cbPersuasion";
             this.cbPersuasion.Size = new System.Drawing.Size(78, 17);
             this.cbPersuasion.TabIndex = 182;
@@ -496,7 +598,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbOrientarse
             // 
             this.cbOrientarse.AutoSize = true;
-            this.cbOrientarse.Location = new System.Drawing.Point(411, 176);
+            this.cbOrientarse.Location = new System.Drawing.Point(651, 161);
             this.cbOrientarse.Name = "cbOrientarse";
             this.cbOrientarse.Size = new System.Drawing.Size(74, 17);
             this.cbOrientarse.TabIndex = 181;
@@ -506,7 +608,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbNaturaleza
             // 
             this.cbNaturaleza.AutoSize = true;
-            this.cbNaturaleza.Location = new System.Drawing.Point(411, 150);
+            this.cbNaturaleza.Location = new System.Drawing.Point(651, 135);
             this.cbNaturaleza.Name = "cbNaturaleza";
             this.cbNaturaleza.Size = new System.Drawing.Size(77, 17);
             this.cbNaturaleza.TabIndex = 180;
@@ -516,7 +618,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbNadar
             // 
             this.cbNadar.AutoSize = true;
-            this.cbNadar.Location = new System.Drawing.Point(411, 124);
+            this.cbNadar.Location = new System.Drawing.Point(651, 109);
             this.cbNadar.Name = "cbNadar";
             this.cbNadar.Size = new System.Drawing.Size(55, 17);
             this.cbNadar.TabIndex = 179;
@@ -526,7 +628,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbMitosCth
             // 
             this.cbMitosCth.AutoSize = true;
-            this.cbMitosCth.Location = new System.Drawing.Point(411, 98);
+            this.cbMitosCth.Location = new System.Drawing.Point(651, 83);
             this.cbMitosCth.Name = "cbMitosCth";
             this.cbMitosCth.Size = new System.Drawing.Size(105, 17);
             this.cbMitosCth.TabIndex = 178;
@@ -536,7 +638,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbMedicina
             // 
             this.cbMedicina.AutoSize = true;
-            this.cbMedicina.Location = new System.Drawing.Point(411, 72);
+            this.cbMedicina.Location = new System.Drawing.Point(651, 57);
             this.cbMedicina.Name = "cbMedicina";
             this.cbMedicina.Size = new System.Drawing.Size(69, 17);
             this.cbMedicina.TabIndex = 177;
@@ -546,7 +648,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbMecanica
             // 
             this.cbMecanica.AutoSize = true;
-            this.cbMecanica.Location = new System.Drawing.Point(411, 46);
+            this.cbMecanica.Location = new System.Drawing.Point(651, 31);
             this.cbMecanica.Name = "cbMecanica";
             this.cbMecanica.Size = new System.Drawing.Size(73, 17);
             this.cbMecanica.TabIndex = 176;
@@ -556,7 +658,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbLanzar
             // 
             this.cbLanzar.AutoSize = true;
-            this.cbLanzar.Location = new System.Drawing.Point(411, 20);
+            this.cbLanzar.Location = new System.Drawing.Point(467, 235);
             this.cbLanzar.Name = "cbLanzar";
             this.cbLanzar.Size = new System.Drawing.Size(58, 17);
             this.cbLanzar.TabIndex = 175;
@@ -566,7 +668,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbJuegoManos
             // 
             this.cbJuegoManos.AutoSize = true;
-            this.cbJuegoManos.Location = new System.Drawing.Point(226, 332);
+            this.cbJuegoManos.Location = new System.Drawing.Point(467, 211);
             this.cbJuegoManos.Name = "cbJuegoManos";
             this.cbJuegoManos.Size = new System.Drawing.Size(104, 17);
             this.cbJuegoManos.TabIndex = 174;
@@ -576,7 +678,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbIntimidar
             // 
             this.cbIntimidar.AutoSize = true;
-            this.cbIntimidar.Location = new System.Drawing.Point(226, 306);
+            this.cbIntimidar.Location = new System.Drawing.Point(467, 185);
             this.cbIntimidar.Name = "cbIntimidar";
             this.cbIntimidar.Size = new System.Drawing.Size(65, 17);
             this.cbIntimidar.TabIndex = 173;
@@ -586,7 +688,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbHistoria
             // 
             this.cbHistoria.AutoSize = true;
-            this.cbHistoria.Location = new System.Drawing.Point(226, 280);
+            this.cbHistoria.Location = new System.Drawing.Point(467, 159);
             this.cbHistoria.Name = "cbHistoria";
             this.cbHistoria.Size = new System.Drawing.Size(61, 17);
             this.cbHistoria.TabIndex = 172;
@@ -596,7 +698,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbEsquivar
             // 
             this.cbEsquivar.AutoSize = true;
-            this.cbEsquivar.Location = new System.Drawing.Point(226, 254);
+            this.cbEsquivar.Location = new System.Drawing.Point(467, 133);
             this.cbEsquivar.Name = "cbEsquivar";
             this.cbEsquivar.Size = new System.Drawing.Size(67, 17);
             this.cbEsquivar.TabIndex = 171;
@@ -606,7 +708,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbEscuchar
             // 
             this.cbEscuchar.AutoSize = true;
-            this.cbEscuchar.Location = new System.Drawing.Point(226, 228);
+            this.cbEscuchar.Location = new System.Drawing.Point(467, 107);
             this.cbEscuchar.Name = "cbEscuchar";
             this.cbEscuchar.Size = new System.Drawing.Size(71, 17);
             this.cbEscuchar.TabIndex = 170;
@@ -616,7 +718,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbEquitacion
             // 
             this.cbEquitacion.AutoSize = true;
-            this.cbEquitacion.Location = new System.Drawing.Point(226, 204);
+            this.cbEquitacion.Location = new System.Drawing.Point(467, 83);
             this.cbEquitacion.Name = "cbEquitacion";
             this.cbEquitacion.Size = new System.Drawing.Size(76, 17);
             this.cbEquitacion.TabIndex = 169;
@@ -626,7 +728,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbEncanto
             // 
             this.cbEncanto.AutoSize = true;
-            this.cbEncanto.Location = new System.Drawing.Point(226, 176);
+            this.cbEncanto.Location = new System.Drawing.Point(467, 55);
             this.cbEncanto.Name = "cbEncanto";
             this.cbEncanto.Size = new System.Drawing.Size(66, 17);
             this.cbEncanto.TabIndex = 168;
@@ -636,7 +738,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbElectricidad
             // 
             this.cbElectricidad.AutoSize = true;
-            this.cbElectricidad.Location = new System.Drawing.Point(226, 150);
+            this.cbElectricidad.Location = new System.Drawing.Point(467, 29);
             this.cbElectricidad.Name = "cbElectricidad";
             this.cbElectricidad.Size = new System.Drawing.Size(81, 17);
             this.cbElectricidad.TabIndex = 167;
@@ -646,7 +748,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbDisfrazarse
             // 
             this.cbDisfrazarse.AutoSize = true;
-            this.cbDisfrazarse.Location = new System.Drawing.Point(226, 124);
+            this.cbDisfrazarse.Location = new System.Drawing.Point(259, 234);
             this.cbDisfrazarse.Name = "cbDisfrazarse";
             this.cbDisfrazarse.Size = new System.Drawing.Size(78, 17);
             this.cbDisfrazarse.TabIndex = 166;
@@ -656,7 +758,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbDescubrir
             // 
             this.cbDescubrir.AutoSize = true;
-            this.cbDescubrir.Location = new System.Drawing.Point(226, 98);
+            this.cbDescubrir.Location = new System.Drawing.Point(259, 208);
             this.cbDescubrir.Name = "cbDescubrir";
             this.cbDescubrir.Size = new System.Drawing.Size(71, 17);
             this.cbDescubrir.TabIndex = 165;
@@ -666,7 +768,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbDerecho
             // 
             this.cbDerecho.AutoSize = true;
-            this.cbDerecho.Location = new System.Drawing.Point(226, 72);
+            this.cbDerecho.Location = new System.Drawing.Point(259, 182);
             this.cbDerecho.Name = "cbDerecho";
             this.cbDerecho.Size = new System.Drawing.Size(67, 17);
             this.cbDerecho.TabIndex = 164;
@@ -676,7 +778,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbCredito
             // 
             this.cbCredito.AutoSize = true;
-            this.cbCredito.Location = new System.Drawing.Point(226, 46);
+            this.cbCredito.Location = new System.Drawing.Point(259, 156);
             this.cbCredito.Name = "cbCredito";
             this.cbCredito.Size = new System.Drawing.Size(59, 17);
             this.cbCredito.TabIndex = 163;
@@ -686,7 +788,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbContavilidad
             // 
             this.cbContavilidad.AutoSize = true;
-            this.cbContavilidad.Location = new System.Drawing.Point(226, 20);
+            this.cbContavilidad.Location = new System.Drawing.Point(259, 130);
             this.cbContavilidad.Name = "cbContavilidad";
             this.cbContavilidad.Size = new System.Drawing.Size(84, 17);
             this.cbContavilidad.TabIndex = 162;
@@ -696,7 +798,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbConducirMaquinaria
             // 
             this.cbConducirMaquinaria.AutoSize = true;
-            this.cbConducirMaquinaria.Location = new System.Drawing.Point(9, 332);
+            this.cbConducirMaquinaria.Location = new System.Drawing.Point(260, 105);
             this.cbConducirMaquinaria.Name = "cbConducirMaquinaria";
             this.cbConducirMaquinaria.Size = new System.Drawing.Size(123, 17);
             this.cbConducirMaquinaria.TabIndex = 161;
@@ -706,7 +808,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbConducirAutomovil
             // 
             this.cbConducirAutomovil.AutoSize = true;
-            this.cbConducirAutomovil.Location = new System.Drawing.Point(9, 306);
+            this.cbConducirAutomovil.Location = new System.Drawing.Point(260, 79);
             this.cbConducirAutomovil.Name = "cbConducirAutomovil";
             this.cbConducirAutomovil.Size = new System.Drawing.Size(116, 17);
             this.cbConducirAutomovil.TabIndex = 160;
@@ -716,7 +818,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbPelea
             // 
             this.cbPelea.AutoSize = true;
-            this.cbPelea.Location = new System.Drawing.Point(8, 280);
+            this.cbPelea.Location = new System.Drawing.Point(259, 53);
             this.cbPelea.Name = "cbPelea";
             this.cbPelea.Size = new System.Drawing.Size(93, 17);
             this.cbPelea.TabIndex = 159;
@@ -726,7 +828,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbCienciasOcultas
             // 
             this.cbCienciasOcultas.AutoSize = true;
-            this.cbCienciasOcultas.Location = new System.Drawing.Point(9, 254);
+            this.cbCienciasOcultas.Location = new System.Drawing.Point(260, 27);
             this.cbCienciasOcultas.Name = "cbCienciasOcultas";
             this.cbCienciasOcultas.Size = new System.Drawing.Size(103, 17);
             this.cbCienciasOcultas.TabIndex = 158;
@@ -736,7 +838,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbCiencia
             // 
             this.cbCiencia.AutoSize = true;
-            this.cbCiencia.Location = new System.Drawing.Point(9, 228);
+            this.cbCiencia.Location = new System.Drawing.Point(53, 235);
             this.cbCiencia.Name = "cbCiencia";
             this.cbCiencia.Size = new System.Drawing.Size(61, 17);
             this.cbCiencia.TabIndex = 157;
@@ -746,7 +848,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbCharlataneria
             // 
             this.cbCharlataneria.AutoSize = true;
-            this.cbCharlataneria.Location = new System.Drawing.Point(9, 204);
+            this.cbCharlataneria.Location = new System.Drawing.Point(53, 211);
             this.cbCharlataneria.Name = "cbCharlataneria";
             this.cbCharlataneria.Size = new System.Drawing.Size(88, 17);
             this.cbCharlataneria.TabIndex = 156;
@@ -756,7 +858,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbCerrajeria
             // 
             this.cbCerrajeria.AutoSize = true;
-            this.cbCerrajeria.Location = new System.Drawing.Point(8, 176);
+            this.cbCerrajeria.Location = new System.Drawing.Point(52, 183);
             this.cbCerrajeria.Name = "cbCerrajeria";
             this.cbCerrajeria.Size = new System.Drawing.Size(70, 17);
             this.cbCerrajeria.TabIndex = 155;
@@ -766,7 +868,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbAntropologuia
             // 
             this.cbAntropologuia.AutoSize = true;
-            this.cbAntropologuia.Location = new System.Drawing.Point(8, 21);
+            this.cbAntropologuia.Location = new System.Drawing.Point(52, 28);
             this.cbAntropologuia.Name = "cbAntropologuia";
             this.cbAntropologuia.Size = new System.Drawing.Size(85, 17);
             this.cbAntropologuia.TabIndex = 154;
@@ -776,7 +878,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbArmaCorta
             // 
             this.cbArmaCorta.AutoSize = true;
-            this.cbArmaCorta.Location = new System.Drawing.Point(8, 46);
+            this.cbArmaCorta.Location = new System.Drawing.Point(52, 53);
             this.cbArmaCorta.Name = "cbArmaCorta";
             this.cbArmaCorta.Size = new System.Drawing.Size(77, 17);
             this.cbArmaCorta.TabIndex = 153;
@@ -786,7 +888,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbRiflesEscopetas
             // 
             this.cbRiflesEscopetas.AutoSize = true;
-            this.cbRiflesEscopetas.Location = new System.Drawing.Point(8, 72);
+            this.cbRiflesEscopetas.Location = new System.Drawing.Point(52, 79);
             this.cbRiflesEscopetas.Name = "cbRiflesEscopetas";
             this.cbRiflesEscopetas.Size = new System.Drawing.Size(96, 17);
             this.cbRiflesEscopetas.TabIndex = 152;
@@ -796,7 +898,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbArqueologuia
             // 
             this.cbArqueologuia.AutoSize = true;
-            this.cbArqueologuia.Location = new System.Drawing.Point(8, 98);
+            this.cbArqueologuia.Location = new System.Drawing.Point(52, 105);
             this.cbArqueologuia.Name = "cbArqueologuia";
             this.cbArqueologuia.Size = new System.Drawing.Size(82, 17);
             this.cbArqueologuia.TabIndex = 151;
@@ -806,7 +908,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbArte
             // 
             this.cbArte.AutoSize = true;
-            this.cbArte.Location = new System.Drawing.Point(8, 123);
+            this.cbArte.Location = new System.Drawing.Point(52, 130);
             this.cbArte.Name = "cbArte";
             this.cbArte.Size = new System.Drawing.Size(94, 17);
             this.cbArte.TabIndex = 150;
@@ -816,7 +918,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // cbBuscarlibros
             // 
             this.cbBuscarlibros.AutoSize = true;
-            this.cbBuscarlibros.Location = new System.Drawing.Point(8, 150);
+            this.cbBuscarlibros.Location = new System.Drawing.Point(52, 157);
             this.cbBuscarlibros.Name = "cbBuscarlibros";
             this.cbBuscarlibros.Size = new System.Drawing.Size(86, 17);
             this.cbBuscarlibros.TabIndex = 149;
@@ -826,7 +928,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // lbPuntPropios
             // 
             this.lbPuntPropios.AutoSize = true;
-            this.lbPuntPropios.Location = new System.Drawing.Point(620, 261);
+            this.lbPuntPropios.Location = new System.Drawing.Point(260, 298);
             this.lbPuntPropios.Name = "lbPuntPropios";
             this.lbPuntPropios.Size = new System.Drawing.Size(31, 17);
             this.lbPuntPropios.TabIndex = 148;
@@ -837,7 +939,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // lbPunTrabajo
             // 
             this.lbPunTrabajo.AutoSize = true;
-            this.lbPunTrabajo.Location = new System.Drawing.Point(620, 204);
+            this.lbPunTrabajo.Location = new System.Drawing.Point(59, 296);
             this.lbPunTrabajo.Name = "lbPunTrabajo";
             this.lbPunTrabajo.Size = new System.Drawing.Size(31, 17);
             this.lbPunTrabajo.TabIndex = 147;
@@ -848,7 +950,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(617, 237);
+            this.label17.Location = new System.Drawing.Point(257, 274);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(140, 13);
             this.label17.TabIndex = 133;
@@ -857,7 +959,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(617, 182);
+            this.label15.Location = new System.Drawing.Point(56, 274);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(150, 13);
             this.label15.TabIndex = 132;
@@ -865,7 +967,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // treparNumericUpDown
             // 
-            this.treparNumericUpDown.Location = new System.Drawing.Point(707, 122);
+            this.treparNumericUpDown.Location = new System.Drawing.Point(946, 206);
             this.treparNumericUpDown.Minimum = new decimal(new int[] {
             20,
             0,
@@ -883,7 +985,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // tasacionNumericUpDown
             // 
-            this.tasacionNumericUpDown.Location = new System.Drawing.Point(707, 96);
+            this.tasacionNumericUpDown.Location = new System.Drawing.Point(946, 180);
             this.tasacionNumericUpDown.Minimum = new decimal(new int[] {
             5,
             0,
@@ -901,7 +1003,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // charlataneriaNumericUpDown
             // 
-            this.charlataneriaNumericUpDown.Location = new System.Drawing.Point(136, 201);
+            this.charlataneriaNumericUpDown.Location = new System.Drawing.Point(180, 208);
             this.charlataneriaNumericUpDown.Minimum = new decimal(new int[] {
             5,
             0,
@@ -919,7 +1021,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // supervivenciaNumericUpDown
             // 
-            this.supervivenciaNumericUpDown.Location = new System.Drawing.Point(707, 71);
+            this.supervivenciaNumericUpDown.Location = new System.Drawing.Point(946, 155);
             this.supervivenciaNumericUpDown.Minimum = new decimal(new int[] {
             10,
             0,
@@ -937,7 +1039,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // sigiloNumericUpDown
             // 
-            this.sigiloNumericUpDown.Location = new System.Drawing.Point(707, 46);
+            this.sigiloNumericUpDown.Location = new System.Drawing.Point(946, 130);
             this.sigiloNumericUpDown.Minimum = new decimal(new int[] {
             20,
             0,
@@ -955,7 +1057,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // seguirrastoNumericUpDown
             // 
-            this.seguirrastoNumericUpDown.Location = new System.Drawing.Point(707, 21);
+            this.seguirrastoNumericUpDown.Location = new System.Drawing.Point(946, 105);
             this.seguirrastoNumericUpDown.Minimum = new decimal(new int[] {
             10,
             0,
@@ -973,7 +1075,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // saltarNumericUpDown
             // 
-            this.saltarNumericUpDown.Location = new System.Drawing.Point(519, 334);
+            this.saltarNumericUpDown.Location = new System.Drawing.Point(946, 82);
             this.saltarNumericUpDown.Minimum = new decimal(new int[] {
             20,
             0,
@@ -991,7 +1093,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // psicologuiaNumericUpDown
             // 
-            this.psicologuiaNumericUpDown.Location = new System.Drawing.Point(519, 308);
+            this.psicologuiaNumericUpDown.Location = new System.Drawing.Point(946, 59);
             this.psicologuiaNumericUpDown.Minimum = new decimal(new int[] {
             10,
             0,
@@ -1009,7 +1111,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // psicoanalisisNumericUpDown
             // 
-            this.psicoanalisisNumericUpDown.Location = new System.Drawing.Point(519, 282);
+            this.psicoanalisisNumericUpDown.Location = new System.Drawing.Point(946, 33);
             this.psicoanalisisNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1027,7 +1129,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // primerosauxiliosNumericUpDown
             // 
-            this.primerosauxiliosNumericUpDown.Location = new System.Drawing.Point(519, 256);
+            this.primerosauxiliosNumericUpDown.Location = new System.Drawing.Point(759, 239);
             this.primerosauxiliosNumericUpDown.Minimum = new decimal(new int[] {
             30,
             0,
@@ -1045,7 +1147,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // pilotarNumericUpDown
             // 
-            this.pilotarNumericUpDown.Location = new System.Drawing.Point(519, 230);
+            this.pilotarNumericUpDown.Location = new System.Drawing.Point(759, 215);
             this.pilotarNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1063,7 +1165,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // persuasionNumericUpDown
             // 
-            this.persuasionNumericUpDown.Location = new System.Drawing.Point(519, 204);
+            this.persuasionNumericUpDown.Location = new System.Drawing.Point(759, 189);
             this.persuasionNumericUpDown.Minimum = new decimal(new int[] {
             10,
             0,
@@ -1081,7 +1183,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // orientarseNumericUpDown
             // 
-            this.orientarseNumericUpDown.Location = new System.Drawing.Point(519, 178);
+            this.orientarseNumericUpDown.Location = new System.Drawing.Point(759, 163);
             this.orientarseNumericUpDown.Minimum = new decimal(new int[] {
             10,
             0,
@@ -1099,7 +1201,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // naturalezaNumericUpDown
             // 
-            this.naturalezaNumericUpDown.Location = new System.Drawing.Point(519, 152);
+            this.naturalezaNumericUpDown.Location = new System.Drawing.Point(759, 137);
             this.naturalezaNumericUpDown.Minimum = new decimal(new int[] {
             10,
             0,
@@ -1117,7 +1219,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // nadarNumericUpDown
             // 
-            this.nadarNumericUpDown.Location = new System.Drawing.Point(519, 126);
+            this.nadarNumericUpDown.Location = new System.Drawing.Point(759, 111);
             this.nadarNumericUpDown.Minimum = new decimal(new int[] {
             20,
             0,
@@ -1135,7 +1237,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // mitoscthulhuNumericUpDown
             // 
-            this.mitoscthulhuNumericUpDown.Location = new System.Drawing.Point(519, 100);
+            this.mitoscthulhuNumericUpDown.Location = new System.Drawing.Point(759, 85);
             this.mitoscthulhuNumericUpDown.Name = "mitoscthulhuNumericUpDown";
             this.mitoscthulhuNumericUpDown.Size = new System.Drawing.Size(50, 20);
             this.mitoscthulhuNumericUpDown.TabIndex = 59;
@@ -1143,7 +1245,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // medicinaNumericUpDown
             // 
-            this.medicinaNumericUpDown.Location = new System.Drawing.Point(519, 74);
+            this.medicinaNumericUpDown.Location = new System.Drawing.Point(759, 59);
             this.medicinaNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1161,7 +1263,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // mecanicaNumericUpDown
             // 
-            this.mecanicaNumericUpDown.Location = new System.Drawing.Point(519, 48);
+            this.mecanicaNumericUpDown.Location = new System.Drawing.Point(759, 33);
             this.mecanicaNumericUpDown.Minimum = new decimal(new int[] {
             10,
             0,
@@ -1179,7 +1281,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // lanzarNumericUpDown
             // 
-            this.lanzarNumericUpDown.Location = new System.Drawing.Point(519, 19);
+            this.lanzarNumericUpDown.Location = new System.Drawing.Point(571, 233);
             this.lanzarNumericUpDown.Minimum = new decimal(new int[] {
             20,
             0,
@@ -1197,7 +1299,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // juegomanosNumericUpDown
             // 
-            this.juegomanosNumericUpDown.Location = new System.Drawing.Point(330, 331);
+            this.juegomanosNumericUpDown.Location = new System.Drawing.Point(571, 210);
             this.juegomanosNumericUpDown.Minimum = new decimal(new int[] {
             10,
             0,
@@ -1215,7 +1317,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // intimidarNumericUpDown
             // 
-            this.intimidarNumericUpDown.Location = new System.Drawing.Point(330, 305);
+            this.intimidarNumericUpDown.Location = new System.Drawing.Point(571, 184);
             this.intimidarNumericUpDown.Minimum = new decimal(new int[] {
             15,
             0,
@@ -1233,7 +1335,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // historiaNumericUpDown
             // 
-            this.historiaNumericUpDown.Location = new System.Drawing.Point(330, 279);
+            this.historiaNumericUpDown.Location = new System.Drawing.Point(571, 158);
             this.historiaNumericUpDown.Minimum = new decimal(new int[] {
             5,
             0,
@@ -1251,7 +1353,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // esquivarNumericUpDown
             // 
-            this.esquivarNumericUpDown.Location = new System.Drawing.Point(330, 253);
+            this.esquivarNumericUpDown.Location = new System.Drawing.Point(571, 132);
             this.esquivarNumericUpDown.Name = "esquivarNumericUpDown";
             this.esquivarNumericUpDown.Size = new System.Drawing.Size(50, 20);
             this.esquivarNumericUpDown.TabIndex = 45;
@@ -1259,7 +1361,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // escucharNumericUpDown
             // 
-            this.escucharNumericUpDown.Location = new System.Drawing.Point(330, 227);
+            this.escucharNumericUpDown.Location = new System.Drawing.Point(571, 106);
             this.escucharNumericUpDown.Minimum = new decimal(new int[] {
             20,
             0,
@@ -1277,7 +1379,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // equitacionNumericUpDown
             // 
-            this.equitacionNumericUpDown.Location = new System.Drawing.Point(330, 201);
+            this.equitacionNumericUpDown.Location = new System.Drawing.Point(571, 80);
             this.equitacionNumericUpDown.Minimum = new decimal(new int[] {
             5,
             0,
@@ -1295,7 +1397,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // encantoNumericUpDown
             // 
-            this.encantoNumericUpDown.Location = new System.Drawing.Point(330, 175);
+            this.encantoNumericUpDown.Location = new System.Drawing.Point(571, 54);
             this.encantoNumericUpDown.Minimum = new decimal(new int[] {
             15,
             0,
@@ -1313,7 +1415,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // electricidadNumericUpDown
             // 
-            this.electricidadNumericUpDown.Location = new System.Drawing.Point(330, 149);
+            this.electricidadNumericUpDown.Location = new System.Drawing.Point(571, 28);
             this.electricidadNumericUpDown.Minimum = new decimal(new int[] {
             10,
             0,
@@ -1331,7 +1433,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // disfrazarseNumericUpDown
             // 
-            this.disfrazarseNumericUpDown.Location = new System.Drawing.Point(330, 123);
+            this.disfrazarseNumericUpDown.Location = new System.Drawing.Point(387, 233);
             this.disfrazarseNumericUpDown.Minimum = new decimal(new int[] {
             5,
             0,
@@ -1349,7 +1451,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // descubrirNumericUpDown
             // 
-            this.descubrirNumericUpDown.Location = new System.Drawing.Point(330, 97);
+            this.descubrirNumericUpDown.Location = new System.Drawing.Point(387, 207);
             this.descubrirNumericUpDown.Minimum = new decimal(new int[] {
             25,
             0,
@@ -1367,7 +1469,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // derechoNumericUpDown
             // 
-            this.derechoNumericUpDown.Location = new System.Drawing.Point(330, 71);
+            this.derechoNumericUpDown.Location = new System.Drawing.Point(387, 181);
             this.derechoNumericUpDown.Minimum = new decimal(new int[] {
             5,
             0,
@@ -1385,7 +1487,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // creditoNumericUpDown
             // 
-            this.creditoNumericUpDown.Location = new System.Drawing.Point(330, 45);
+            this.creditoNumericUpDown.Location = new System.Drawing.Point(387, 155);
             this.creditoNumericUpDown.Name = "creditoNumericUpDown";
             this.creditoNumericUpDown.Size = new System.Drawing.Size(50, 20);
             this.creditoNumericUpDown.TabIndex = 29;
@@ -1393,7 +1495,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // contavilidadNumericUpDown
             // 
-            this.contavilidadNumericUpDown.Location = new System.Drawing.Point(330, 19);
+            this.contavilidadNumericUpDown.Location = new System.Drawing.Point(387, 129);
             this.contavilidadNumericUpDown.Minimum = new decimal(new int[] {
             5,
             0,
@@ -1411,7 +1513,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // conducirmaquinariaNumericUpDown
             // 
-            this.conducirmaquinariaNumericUpDown.Location = new System.Drawing.Point(136, 331);
+            this.conducirmaquinariaNumericUpDown.Location = new System.Drawing.Point(387, 104);
             this.conducirmaquinariaNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1429,7 +1531,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // conducirautomovilNumericUpDown
             // 
-            this.conducirautomovilNumericUpDown.Location = new System.Drawing.Point(136, 305);
+            this.conducirautomovilNumericUpDown.Location = new System.Drawing.Point(387, 78);
             this.conducirautomovilNumericUpDown.Minimum = new decimal(new int[] {
             20,
             0,
@@ -1447,7 +1549,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // peleaNumericUpDown
             // 
-            this.peleaNumericUpDown.Location = new System.Drawing.Point(136, 279);
+            this.peleaNumericUpDown.Location = new System.Drawing.Point(387, 52);
             this.peleaNumericUpDown.Minimum = new decimal(new int[] {
             25,
             0,
@@ -1465,7 +1567,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // cienciasocultasNumericUpDown
             // 
-            this.cienciasocultasNumericUpDown.Location = new System.Drawing.Point(136, 253);
+            this.cienciasocultasNumericUpDown.Location = new System.Drawing.Point(387, 26);
             this.cienciasocultasNumericUpDown.Minimum = new decimal(new int[] {
             5,
             0,
@@ -1483,7 +1585,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // cienciaNumericUpDown
             // 
-            this.cienciaNumericUpDown.Location = new System.Drawing.Point(136, 227);
+            this.cienciaNumericUpDown.Location = new System.Drawing.Point(180, 234);
             this.cienciaNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1501,7 +1603,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // cerrajeriaNumericUpDown
             // 
-            this.cerrajeriaNumericUpDown.Location = new System.Drawing.Point(136, 175);
+            this.cerrajeriaNumericUpDown.Location = new System.Drawing.Point(180, 182);
             this.cerrajeriaNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1519,7 +1621,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // buscarlibrosNumericUpDown
             // 
-            this.buscarlibrosNumericUpDown.Location = new System.Drawing.Point(136, 149);
+            this.buscarlibrosNumericUpDown.Location = new System.Drawing.Point(180, 156);
             this.buscarlibrosNumericUpDown.Minimum = new decimal(new int[] {
             20,
             0,
@@ -1537,7 +1639,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // arteYartesaniaNumericUpDown
             // 
-            this.arteYartesaniaNumericUpDown.Location = new System.Drawing.Point(136, 123);
+            this.arteYartesaniaNumericUpDown.Location = new System.Drawing.Point(180, 130);
             this.arteYartesaniaNumericUpDown.Minimum = new decimal(new int[] {
             5,
             0,
@@ -1555,7 +1657,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // arqueologuiaNumericUpDown
             // 
-            this.arqueologuiaNumericUpDown.Location = new System.Drawing.Point(136, 97);
+            this.arqueologuiaNumericUpDown.Location = new System.Drawing.Point(180, 104);
             this.arqueologuiaNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
@@ -1573,7 +1675,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // fusilYescopetaNumericUpDown
             // 
-            this.fusilYescopetaNumericUpDown.Location = new System.Drawing.Point(136, 71);
+            this.fusilYescopetaNumericUpDown.Location = new System.Drawing.Point(180, 78);
             this.fusilYescopetaNumericUpDown.Minimum = new decimal(new int[] {
             25,
             0,
@@ -1591,7 +1693,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // armacortaNumericUpDown
             // 
-            this.armacortaNumericUpDown.Location = new System.Drawing.Point(136, 45);
+            this.armacortaNumericUpDown.Location = new System.Drawing.Point(180, 52);
             this.armacortaNumericUpDown.Minimum = new decimal(new int[] {
             20,
             0,
@@ -1609,7 +1711,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // antropologuiaNumericUpDown
             // 
-            this.antropologuiaNumericUpDown.Location = new System.Drawing.Point(136, 19);
+            this.antropologuiaNumericUpDown.Location = new System.Drawing.Point(180, 26);
             this.antropologuiaNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
@@ -2294,7 +2396,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(851, 215);
+            this.label18.Location = new System.Drawing.Point(18, 607);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(99, 13);
             this.label18.TabIndex = 55;
@@ -2339,6 +2441,8 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.equipadoTableAdapter = null;
+            this.tableAdapterManager.equipoTableAdapter = null;
             this.tableAdapterManager.habilidadesTableAdapter = null;
             this.tableAdapterManager.personajeTableAdapter = this.personajeTableAdapter;
             this.tableAdapterManager.UpdateOrder = Proyecto_Kevin_Alonso_Gestion_OC_DND.llamada_de_cthulhuDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -2351,15 +2455,186 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             this.helpProvider1.HelpNamespace = "https://kevinalonso5.github.io/Crearpersonaje.html";
             // 
+            // equipoBindingSource
+            // 
+            this.equipoBindingSource.DataMember = "equipo";
+            this.equipoBindingSource.DataSource = this.llamada_de_cthulhuDataSet;
+            // 
+            // equipoTableAdapter
+            // 
+            this.equipoTableAdapter.ClearBeforeFill = true;
+            // 
+            // nombreComboBox
+            // 
+            this.nombreComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipoBindingSource, "nombre", true));
+            this.nombreComboBox.DataSource = this.equipoBindingSource;
+            this.nombreComboBox.DisplayMember = "nombre";
+            this.nombreComboBox.FormattingEnabled = true;
+            this.nombreComboBox.Location = new System.Drawing.Point(67, 39);
+            this.nombreComboBox.Name = "nombreComboBox";
+            this.nombreComboBox.Size = new System.Drawing.Size(121, 21);
+            this.nombreComboBox.TabIndex = 56;
+            this.nombreComboBox.ValueMemberChanged += new System.EventHandler(this.nombreComboBox_ValueMemberChanged);
+            // 
+            // dañoLabel1
+            // 
+            this.dañoLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipoBindingSource, "daño", true));
+            this.dañoLabel1.Location = new System.Drawing.Point(215, 39);
+            this.dañoLabel1.Name = "dañoLabel1";
+            this.dañoLabel1.Size = new System.Drawing.Size(100, 23);
+            this.dañoLabel1.TabIndex = 57;
+            this.dañoLabel1.Text = "label23";
+            // 
+            // alcanceLabel1
+            // 
+            this.alcanceLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipoBindingSource, "alcance", true));
+            this.alcanceLabel1.Location = new System.Drawing.Point(321, 39);
+            this.alcanceLabel1.Name = "alcanceLabel1";
+            this.alcanceLabel1.Size = new System.Drawing.Size(100, 23);
+            this.alcanceLabel1.TabIndex = 58;
+            this.alcanceLabel1.Text = "label23";
+            // 
+            // num_ataquesLabel1
+            // 
+            this.num_ataquesLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipoBindingSource, "num_ataques", true));
+            this.num_ataquesLabel1.Location = new System.Drawing.Point(427, 39);
+            this.num_ataquesLabel1.Name = "num_ataquesLabel1";
+            this.num_ataquesLabel1.Size = new System.Drawing.Size(100, 23);
+            this.num_ataquesLabel1.TabIndex = 59;
+            this.num_ataquesLabel1.Text = "label23";
+            // 
+            // municionLabel1
+            // 
+            this.municionLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipoBindingSource, "municion", true));
+            this.municionLabel1.Location = new System.Drawing.Point(533, 39);
+            this.municionLabel1.Name = "municionLabel1";
+            this.municionLabel1.Size = new System.Drawing.Size(100, 23);
+            this.municionLabel1.TabIndex = 60;
+            this.municionLabel1.Text = "label23";
+            // 
+            // averiaLabel1
+            // 
+            this.averiaLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipoBindingSource, "averia", true));
+            this.averiaLabel1.Location = new System.Drawing.Point(639, 39);
+            this.averiaLabel1.Name = "averiaLabel1";
+            this.averiaLabel1.Size = new System.Drawing.Size(82, 23);
+            this.averiaLabel1.TabIndex = 61;
+            this.averiaLabel1.Text = "label23";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lbDificulExtremo);
+            this.groupBox1.Controls.Add(this.lbDificulDificil);
+            this.groupBox1.Controls.Add(this.lbDificulNormal);
+            this.groupBox1.Controls.Add(dificultad_extremaLabel);
+            this.groupBox1.Controls.Add(dificultad_dificilLabel);
+            this.groupBox1.Controls.Add(dificultad_normalLabel);
+            this.groupBox1.Controls.Add(nombreLabel);
+            this.groupBox1.Controls.Add(averiaLabel);
+            this.groupBox1.Controls.Add(this.nombreComboBox);
+            this.groupBox1.Controls.Add(this.averiaLabel1);
+            this.groupBox1.Controls.Add(this.dañoLabel1);
+            this.groupBox1.Controls.Add(municionLabel);
+            this.groupBox1.Controls.Add(dañoLabel);
+            this.groupBox1.Controls.Add(this.municionLabel1);
+            this.groupBox1.Controls.Add(this.alcanceLabel1);
+            this.groupBox1.Controls.Add(num_ataquesLabel);
+            this.groupBox1.Controls.Add(alcanceLabel);
+            this.groupBox1.Controls.Add(this.num_ataquesLabel1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 524);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1047, 72);
+            this.groupBox1.TabIndex = 62;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Armas";
+            // 
+            // equipadoBindingSource
+            // 
+            this.equipadoBindingSource.DataMember = "equipado";
+            this.equipadoBindingSource.DataSource = this.llamada_de_cthulhuDataSet;
+            // 
+            // id_armaTextBox
+            // 
+            this.id_armaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipoBindingSource, "id_arma", true));
+            this.id_armaTextBox.Location = new System.Drawing.Point(349, 553);
+            this.id_armaTextBox.Name = "id_armaTextBox";
+            this.id_armaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.id_armaTextBox.TabIndex = 62;
+            // 
+            // equipadoTableAdapter
+            // 
+            this.equipadoTableAdapter.ClearBeforeFill = true;
+            // 
+            // dificultad_dificilLabel
+            // 
+            dificultad_dificilLabel.AutoSize = true;
+            dificultad_dificilLabel.Location = new System.Drawing.Point(833, 16);
+            dificultad_dificilLabel.Name = "dificultad_dificilLabel";
+            dificultad_dificilLabel.Size = new System.Drawing.Size(78, 13);
+            dificultad_dificilLabel.TabIndex = 63;
+            dificultad_dificilLabel.Text = "dificultad dificil:";
+            // 
+            // dificultad_extremaLabel
+            // 
+            dificultad_extremaLabel.AutoSize = true;
+            dificultad_extremaLabel.Location = new System.Drawing.Point(939, 16);
+            dificultad_extremaLabel.Name = "dificultad_extremaLabel";
+            dificultad_extremaLabel.Size = new System.Drawing.Size(92, 13);
+            dificultad_extremaLabel.TabIndex = 64;
+            dificultad_extremaLabel.Text = "dificultad extrema:";
+            // 
+            // corto_largoTextBox
+            // 
+            this.corto_largoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.equipoBindingSource, "corto_largo", true));
+            this.corto_largoTextBox.Location = new System.Drawing.Point(349, 566);
+            this.corto_largoTextBox.Name = "corto_largoTextBox";
+            this.corto_largoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.corto_largoTextBox.TabIndex = 66;
+            // 
+            // lbDificulNormal
+            // 
+            this.lbDificulNormal.AutoSize = true;
+            this.lbDificulNormal.Location = new System.Drawing.Point(727, 42);
+            this.lbDificulNormal.Name = "lbDificulNormal";
+            this.lbDificulNormal.Size = new System.Drawing.Size(41, 13);
+            this.lbDificulNormal.TabIndex = 63;
+            this.lbDificulNormal.Text = "label23";
+            // 
+            // lbDificulDificil
+            // 
+            this.lbDificulDificil.AutoSize = true;
+            this.lbDificulDificil.Location = new System.Drawing.Point(836, 42);
+            this.lbDificulDificil.Name = "lbDificulDificil";
+            this.lbDificulDificil.Size = new System.Drawing.Size(41, 13);
+            this.lbDificulDificil.TabIndex = 64;
+            this.lbDificulDificil.Text = "label24";
+            // 
+            // lbDificulExtremo
+            // 
+            this.lbDificulExtremo.AutoSize = true;
+            this.lbDificulExtremo.Location = new System.Drawing.Point(956, 42);
+            this.lbDificulExtremo.Name = "lbDificulExtremo";
+            this.lbDificulExtremo.Size = new System.Drawing.Size(41, 13);
+            this.lbDificulExtremo.TabIndex = 65;
+            this.lbDificulExtremo.Text = "label26";
+            // 
+            // equipadoIdequipoequipoidarmaBindingSource
+            // 
+            this.equipadoIdequipoequipoidarmaBindingSource.DataMember = "equipado_Id_equipo_equipo_id_arma";
+            this.equipadoIdequipoequipoidarmaBindingSource.DataSource = this.equipoBindingSource;
+            // 
             // Cthulhu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1106, 633);
+            this.ClientSize = new System.Drawing.Size(1070, 636);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.corto_largoTextBox);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.tbJugador);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.gbPersonaje);
+            this.Controls.Add(this.id_armaTextBox);
             this.Controls.Add(this.gbHabilidades);
             this.Controls.Add(this.gbExtadisticas);
             this.Controls.Add(this.gbDatos);
@@ -2434,6 +2709,11 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             ((System.ComponentModel.ISupportInitialize)(this.personajeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.llamada_de_cthulhuDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.habilidadesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipoBindingSource)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.equipadoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipadoIdequipoequipoidarmaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2611,5 +2891,22 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
         private System.Windows.Forms.ToolStripMenuItem prueabaToolStripMenuItem;
         private System.Windows.Forms.ToolTip ttCthulhu;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.BindingSource equipoBindingSource;
+        private llamada_de_cthulhuDataSetTableAdapters.equipoTableAdapter equipoTableAdapter;
+        private System.Windows.Forms.ComboBox nombreComboBox;
+        private System.Windows.Forms.Label dañoLabel1;
+        private System.Windows.Forms.Label alcanceLabel1;
+        private System.Windows.Forms.Label num_ataquesLabel1;
+        private System.Windows.Forms.Label municionLabel1;
+        private System.Windows.Forms.Label averiaLabel1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox id_armaTextBox;
+        private System.Windows.Forms.BindingSource equipadoBindingSource;
+        private llamada_de_cthulhuDataSetTableAdapters.equipadoTableAdapter equipadoTableAdapter;
+        private System.Windows.Forms.TextBox corto_largoTextBox;
+        private System.Windows.Forms.Label lbDificulExtremo;
+        private System.Windows.Forms.Label lbDificulDificil;
+        private System.Windows.Forms.Label lbDificulNormal;
+        private System.Windows.Forms.BindingSource equipadoIdequipoequipoidarmaBindingSource;
     }
 }

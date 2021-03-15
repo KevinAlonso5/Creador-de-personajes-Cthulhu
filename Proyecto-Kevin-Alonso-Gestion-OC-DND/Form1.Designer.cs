@@ -56,6 +56,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             this.personajeTableAdapter = new Proyecto_Kevin_Alonso_Gestion_OC_DND.llamada_de_cthulhuDataSetTableAdapters.personajeTableAdapter();
             this.tableAdapterManager = new Proyecto_Kevin_Alonso_Gestion_OC_DND.llamada_de_cthulhuDataSetTableAdapters.TableAdapterManager();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.añadirArmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -94,27 +95,28 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // crearPersonajeToolStripMenuItem
             // 
             this.crearPersonajeToolStripMenuItem.Name = "crearPersonajeToolStripMenuItem";
-            this.crearPersonajeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.crearPersonajeToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.crearPersonajeToolStripMenuItem.Text = "Crear personaje";
             this.crearPersonajeToolStripMenuItem.Click += new System.EventHandler(this.crearPersonajeToolStripMenuItem_Click);
             // 
             // verPersonajeToolStripMenuItem
             // 
             this.verPersonajeToolStripMenuItem.Name = "verPersonajeToolStripMenuItem";
-            this.verPersonajeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verPersonajeToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.verPersonajeToolStripMenuItem.Text = "Ver personaje";
             this.verPersonajeToolStripMenuItem.Click += new System.EventHandler(this.verPersonajeToolStripMenuItem_Click);
             // 
             // editarPersonajesToolStripMenuItem
             // 
             this.editarPersonajesToolStripMenuItem.Name = "editarPersonajesToolStripMenuItem";
-            this.editarPersonajesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarPersonajesToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.editarPersonajesToolStripMenuItem.Text = "Editar personajes";
             this.editarPersonajesToolStripMenuItem.Click += new System.EventHandler(this.listaDePersonajesToolStripMenuItem_Click);
             // 
             // gestionToolStripMenuItem
             // 
             this.gestionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.añadirArmaToolStripMenuItem,
             this.personajesToolStripMenuItem,
             this.ordenarToolStripMenuItem});
             this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
@@ -124,8 +126,8 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // personajesToolStripMenuItem
             // 
             this.personajesToolStripMenuItem.Name = "personajesToolStripMenuItem";
-            this.personajesToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.personajesToolStripMenuItem.Text = "personajes";
+            this.personajesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personajesToolStripMenuItem.Text = "Personajes";
             this.personajesToolStripMenuItem.Click += new System.EventHandler(this.personajesToolStripMenuItem_Click);
             // 
             // ordenarToolStripMenuItem
@@ -134,7 +136,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             this.verticalmenteToolStripMenuItem,
             this.horizontalToolStripMenuItem1});
             this.ordenarToolStripMenuItem.Name = "ordenarToolStripMenuItem";
-            this.ordenarToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.ordenarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ordenarToolStripMenuItem.Text = "Ordenar";
             // 
             // verticalmenteToolStripMenuItem
@@ -238,6 +240,8 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.equipadoTableAdapter = null;
+            this.tableAdapterManager.equipoTableAdapter = null;
             this.tableAdapterManager.habilidadesTableAdapter = null;
             this.tableAdapterManager.personajeTableAdapter = this.personajeTableAdapter;
             this.tableAdapterManager.UpdateOrder = Proyecto_Kevin_Alonso_Gestion_OC_DND.llamada_de_cthulhuDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -245,6 +249,13 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // helpProvider1
             // 
             this.helpProvider1.HelpNamespace = "https://kevinalonso5.github.io";
+            // 
+            // añadirArmaToolStripMenuItem
+            // 
+            this.añadirArmaToolStripMenuItem.Name = "añadirArmaToolStripMenuItem";
+            this.añadirArmaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.añadirArmaToolStripMenuItem.Text = "Añadir Arma";
+            this.añadirArmaToolStripMenuItem.Click += new System.EventHandler(this.añadirArmaToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -302,6 +313,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
         private System.Windows.Forms.ToolStripMenuItem verticalmenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem horizontalToolStripMenuItem1;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.ToolStripMenuItem añadirArmaToolStripMenuItem;
     }
 }
 
