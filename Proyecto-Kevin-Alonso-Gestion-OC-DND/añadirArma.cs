@@ -37,10 +37,22 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             if (tipoArma() != -1)
             {
                 equipoTableAdapter.Insert(tbNombre.Text, tbDaño.Text, tbAlcance.Text, tbNumAtac.Text, Convert.ToInt32(nudMunicion.Value), Convert.ToInt32(nudAveria.Value), tipoArma());
+
+                MessageBox.Show("Arma creada con exito", "creada con exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                tbNombre.Text = "";
+                tbDaño.Text = "";
+                tbAlcance.Text=""; tbNumAtac.Text = "";
+                nudMunicion.Value = 0;
+                nudAveria.Value = 0;
+                cbTipoArma.Text = "";
+
+
+
             }
             else
             {
-                MessageBox.Show("No pudes dejar el valor vacio");
+                MessageBox.Show("No pudes dejar el valor vacio", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }

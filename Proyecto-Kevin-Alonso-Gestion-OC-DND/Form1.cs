@@ -25,7 +25,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             t.Abort();
 
             this.personajeTableAdapter.Fill(this.llamada_de_cthulhuDataSet.personaje);
-            numeroPersonajes.Text = "Ahi " + personajeTableAdapter.numPerson() + " personajes creados";
+            numeroPersonajes.Text = "Hay " + personajeTableAdapter.numPerson() + " personajes creados";
         }
 
         /// <summary>

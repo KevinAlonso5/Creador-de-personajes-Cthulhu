@@ -81,22 +81,37 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
         {
             int ValCambiado = Convert.ToInt32(entrada.Value);
             int ValHabilidad = Convert.ToInt32(valHab[numHab]);
-            Boolean comprobador = ((Convert.ToInt32(lbPunTrabajo.Text) > 0) || (Convert.ToInt32(lbPuntPropios.Text) > 0));
 
-            MessageBox.Show(ValCambiado + " " + ValHabilidad);
-            if (ValCambiado > ValHabilidad && comprobador)
+            if (ValCambiado > ValHabilidad)
             {
                 int restado = (ValCambiado - ValHabilidad);
-                if ((lbPunTrabajo.Checked) &&(checBoxEntrada.Checked))
+                if (lbPunTrabajo.Checked)
                 {
-                    lbPunTrabajo.Text = Convert.ToInt32(lbPunTrabajo.Text) - restado + "";
+                    if ((checBoxEntrada.Checked) && (Convert.ToInt32(lbPunTrabajo.Text) > 0))
+                    {
+                        lbPunTrabajo.Text = Convert.ToInt32(lbPunTrabajo.Text) - restado + "";
+                        valHab[numHab] = ValCambiado;
+                    }
+                    else
+                    {
+                        entrada.Value = ValHabilidad;
+                    }
+
                 }
                 else if (lbPuntPropios.Checked)
                 {
-                    //MessageBox.Show("a entrado el parametro " + checBoxEntrada.Text + " con " + ValHabilidad);
-                    lbPuntPropios.Text = Convert.ToInt32(lbPuntPropios.Text) - restado + "";
+                    if(Convert.ToInt32(lbPuntPropios.Text) > 0)
+                    {
+                        lbPuntPropios.Text = Convert.ToInt32(lbPuntPropios.Text) - restado + "";
+                        valHab[numHab] = ValCambiado;
+                    }
+                    else
+                    {
+                        entrada.Value = ValHabilidad;
+                    }
+
                 }
-                valHab[numHab] = ValCambiado;
+                
             }
 
             else if(ValCambiado < ValHabilidad)
@@ -116,7 +131,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
 
             else if ((Convert.ToInt32(lbPunTrabajo.Text) <= 0) || (Convert.ToInt32(lbPunTrabajo.Text) > 0))
             {
-                entrada.Value = ValHabilidad;
+                
             }
 
             
@@ -765,6 +780,9 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
                 equipadoTableAdapter.Insert(Convert.ToInt32(personajeTableAdapter.GetOnId()), Convert.ToInt32(id_armaTextBox.Text),
                     Convert.ToInt32(lbDificulNormal.Text), Convert.ToInt32(lbDificulDificil.Text), Convert.ToInt32(lbDificulExtremo.Text));
 
+                MessageBox.Show("El personaje se a creado con exito", "creada con exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Close();
             }
 
         }

@@ -38,6 +38,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             this.verPersonajeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarPersonajesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.añadirArmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personajesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verticalmenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,7 +57,6 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             this.personajeTableAdapter = new Proyecto_Kevin_Alonso_Gestion_OC_DND.llamada_de_cthulhuDataSetTableAdapters.personajeTableAdapter();
             this.tableAdapterManager = new Proyecto_Kevin_Alonso_Gestion_OC_DND.llamada_de_cthulhuDataSetTableAdapters.TableAdapterManager();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.añadirArmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -123,10 +123,17 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             this.gestionToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.gestionToolStripMenuItem.Text = "gestion";
             // 
+            // añadirArmaToolStripMenuItem
+            // 
+            this.añadirArmaToolStripMenuItem.Name = "añadirArmaToolStripMenuItem";
+            this.añadirArmaToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.añadirArmaToolStripMenuItem.Text = "Añadir Arma";
+            this.añadirArmaToolStripMenuItem.Click += new System.EventHandler(this.añadirArmaToolStripMenuItem_Click);
+            // 
             // personajesToolStripMenuItem
             // 
             this.personajesToolStripMenuItem.Name = "personajesToolStripMenuItem";
-            this.personajesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personajesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.personajesToolStripMenuItem.Text = "Personajes";
             this.personajesToolStripMenuItem.Click += new System.EventHandler(this.personajesToolStripMenuItem_Click);
             // 
@@ -136,7 +143,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             this.verticalmenteToolStripMenuItem,
             this.horizontalToolStripMenuItem1});
             this.ordenarToolStripMenuItem.Name = "ordenarToolStripMenuItem";
-            this.ordenarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ordenarToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.ordenarToolStripMenuItem.Text = "Ordenar";
             // 
             // verticalmenteToolStripMenuItem
@@ -220,8 +227,8 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // numeroPersonajes
             // 
             this.numeroPersonajes.Name = "numeroPersonajes";
-            this.numeroPersonajes.Size = new System.Drawing.Size(137, 17);
-            this.numeroPersonajes.Text = "Ahi 0 personajes creados";
+            this.numeroPersonajes.Size = new System.Drawing.Size(140, 17);
+            this.numeroPersonajes.Text = "Hay 0 personajes creados";
             // 
             // llamada_de_cthulhuDataSet
             // 
@@ -249,13 +256,6 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // helpProvider1
             // 
             this.helpProvider1.HelpNamespace = "https://kevinalonso5.github.io";
-            // 
-            // añadirArmaToolStripMenuItem
-            // 
-            this.añadirArmaToolStripMenuItem.Name = "añadirArmaToolStripMenuItem";
-            this.añadirArmaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.añadirArmaToolStripMenuItem.Text = "Añadir Arma";
-            this.añadirArmaToolStripMenuItem.Click += new System.EventHandler(this.añadirArmaToolStripMenuItem_Click);
             // 
             // Form1
             // 
