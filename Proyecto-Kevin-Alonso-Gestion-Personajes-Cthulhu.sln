@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu", "Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj", "{983C6E87-03D7-4535-84F2-97B6E50A51D9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador gestion de hojas de personaje Cthulhu", "Instalador gestion de hojas de personaje Cthulhu\Instalador gestion de hojas de personaje Cthulhu.vdproj", "{14FF15D2-8DAE-4A64-872B-4F7EC70F4D30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{983C6E87-03D7-4535-84F2-97B6E50A51D9}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{983C6E87-03D7-4535-84F2-97B6E50A51D9}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{983C6E87-03D7-4535-84F2-97B6E50A51D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983C6E87-03D7-4535-84F2-97B6E50A51D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FF15D2-8DAE-4A64-872B-4F7EC70F4D30}.Debug|Any CPU.ActiveCfg = Release
+		{14FF15D2-8DAE-4A64-872B-4F7EC70F4D30}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C78ABA4D-CE3F-4B42-AF77-7A007CB7BF9C}
+	EndGlobalSection
+EndGlobal

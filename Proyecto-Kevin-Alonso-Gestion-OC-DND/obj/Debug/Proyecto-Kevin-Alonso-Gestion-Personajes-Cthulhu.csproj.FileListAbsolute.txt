@@ -1,0 +1,141 @@
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csprojAssemblyReference.cache
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Form1.resources
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.splashScreen.resources
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.GenerateResource.cache
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.pdb
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe.config
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.pdb
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Properties.Resources.resources
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.CoreCompileInputs.cache
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.cthulhu.resources
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.habilidades.resources
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Personajes.resources
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\stdole.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.CopyComplete
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.VerPersonaje.resources
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe.config
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.pdb
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\AxShockwaveFlashObjects.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportSource.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.Shared.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.Windows.Forms.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\ShockwaveFlashObjects.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\stdole.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csprojAssemblyReference.cache
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Cthulhu.resources
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Form1.resources
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.habilidades.resources
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Personajes.resources
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Properties.Resources.resources
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.splashScreen.resources
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.VerPersonaje.resources
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.GenerateResource.cache
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.CoreCompileInputs.cache
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.CopyComplete
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe
+H:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.pdb
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe.config
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.pdb
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\AxShockwaveFlashObjects.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.Shared.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\ShockwaveFlashObjects.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\stdole.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csprojAssemblyReference.cache
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Cthulhu.resources
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Form1.resources
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.habilidades.resources
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Personajes.resources
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Properties.Resources.resources
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.splashScreen.resources
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.VerPersonaje.resources
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.GenerateResource.cache
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.CoreCompileInputs.cache
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.CopyComplete
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe
+F:\prollecto intefaces\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.pdb
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe.config
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.pdb
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\AxShockwaveFlashObjects.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.Shared.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\ShockwaveFlashObjects.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\stdole.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csprojAssemblyReference.cache
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Cthulhu.resources
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Form1.resources
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.habilidades.resources
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Personajes.resources
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Properties.Resources.resources
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.splashScreen.resources
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.VerPersonaje.resources
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.GenerateResource.cache
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.CoreCompileInputs.cache
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.CopyComplete
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.pdb
+D:\Escritorio\prollecto intefaces ultima version\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.ListaPersonajes.resources

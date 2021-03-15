@@ -1,0 +1,12 @@
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe.config
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\bin\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.pdb
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.csprojAssemblyReference.cache
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Properties.Resources.resources
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.splashScreen.resources
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.csproj.GenerateResource.cache
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.csproj.CoreCompileInputs.cache
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.exe
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto-Kevin-Alonso-Gestion-OC-DND.pdb
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.Form1.resources
+C:\Users\Kev\source\repos\Proyecto-Kevin-Alonso-Gestion-OC-DND\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Debug\Proyecto_Kevin_Alonso_Gestion_OC_DND.DnD.resources
