@@ -83,7 +83,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             int ValHabilidad = Convert.ToInt32(valHab[numHab]);
             Boolean comprobador = ((Convert.ToInt32(lbPunTrabajo.Text) > 0) || (Convert.ToInt32(lbPuntPropios.Text) > 0));
 
-
+            MessageBox.Show(ValCambiado + " " + ValHabilidad);
             if (ValCambiado > ValHabilidad && comprobador)
             {
                 int restado = (ValCambiado - ValHabilidad);
@@ -93,6 +93,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
                 }
                 else if (lbPuntPropios.Checked)
                 {
+                    //MessageBox.Show("a entrado el parametro " + checBoxEntrada.Text + " con " + ValHabilidad);
                     lbPuntPropios.Text = Convert.ToInt32(lbPuntPropios.Text) - restado + "";
                 }
                 valHab[numHab] = ValCambiado;
@@ -505,13 +506,13 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
 
         private void fusilYescopetaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(2, armacortaNumericUpDown, cbRiflesEscopetas);
+            cambiosHabilidades(2, fusilYescopetaNumericUpDown, cbRiflesEscopetas);
             AsignarDificultad();
         }
 
         private void arqueologuiaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(3, armacortaNumericUpDown, cbArqueologuia);
+            cambiosHabilidades(3, arqueologuiaNumericUpDown, cbArqueologuia);
         }
         private void arteYartesaniaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
@@ -566,12 +567,12 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
 
         private void creditoNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(14, conducirmaquinariaNumericUpDown, cbCredito);
+            cambiosHabilidades(14, creditoNumericUpDown, cbCredito);
         }
 
         private void derechoNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            cambiosHabilidades(15, creditoNumericUpDown, cbDerecho);
+            cambiosHabilidades(15, derechoNumericUpDown, cbDerecho);
         }
 
         private void descubrirNumericUpDown_ValueChanged(object sender, EventArgs e)
