@@ -298,7 +298,6 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
         private System.Windows.Forms.ToolStripMenuItem tsmNuevoPersonaje;
         private System.Windows.Forms.ToolStripMenuItem tsmOrdenar;
         private System.Windows.Forms.ToolStripMenuItem verticalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem horizontalToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel numeroPersonajes;

@@ -404,23 +404,71 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
         private void btnRecalcular_Click(object sender, EventArgs e)
         {
 
+            edad();
+
+            recalculo();
+
+            movimiento();
+
+            lbVida.Text = (Convert.ToInt32(lbExtremoTam.Text) + Convert.ToInt32(lbExtremoCons.Text)) / 2 + "";
+            lbMP.Text = Convert.ToInt32(lbExtremoPod.Text) + "";
+            lbCordura.Text = Convert.ToInt32(lbExtremoPod.Text) + "";
+            lbSuerte.Text = generadorRandom(3) + "";
+
+            lbPunTrabajo.Text = Convert.ToInt32(lbExtremoEdu.Text) * 20 + "";
+            lbPuntPropios.Text = Convert.ToInt32(lbExtremoInt.Text) * 10 + "";
+
+            esquivarNumericUpDown.Value = Convert.ToInt32(lbDificilDes.Text);
+
+            comprobarTrabajo();
+            AsignarDificultad();
+        }
+
+        /// <summary>
+        /// Este metodo hace los cambios de la edad se apliquen
+        /// </summary>
+        private void edad()
+        {
             if (nudEdad.Value > 30)
             {
                 int mallorQue = Convert.ToInt32(nudEdad.Value) - 40;
                 while (mallorQue > 10)
-                {   
-                    if(nudFuerza.Value > 5) { nudFuerza.Value = nudFuerza.Value - 1; }
+                {
+                    if (nudFuerza.Value > 5) { nudFuerza.Value = nudFuerza.Value - 1; }
                     if (nudCons.Value > 5) { nudCons.Value = nudCons.Value - 1; }
                     if (nudDes.Value > 5) { nudDes.Value = nudDes.Value - 1; }
                     if (nudApa.Value > 5) { nudApa.Value = nudApa.Value - 1; }
                     if (nudFuerza.Value < 95) { nudEdu.Value = nudEdu.Value + 5; }
 
-                    mallorQue-= 10;
+                    mallorQue -= 10;
                 }
             }
+        }
 
+        /// <summary>
+        /// Este metodo determina que valor le corresponde a la estadistica de Mov
+        /// </summary>
+        private void movimiento()
+        {
+            if ((nudTam.Value > nudCons.Value) && (nudTam.Value > nudFuerza.Value))
+            {
+                lbMov.Text = "7";
+            }
+            else if ((nudTam.Value == nudCons.Value) || (nudTam.Value == nudFuerza.Value))
+            {
+                lbMov.Text = "8";
+            }
+            else if ((nudTam.Value < nudCons.Value) && (nudTam.Value < nudFuerza.Value))
+            {
+                lbMov.Text = "9";
+            }
+        }
 
-            ///este conjunto de ifs comprueba que las estadisticas esten bien y en caso de que no coloca el valor que les corresponde
+        /// <summary>
+        /// Este metodo comprueba que las estadisticas esten bien y en caso de que no coloca el valor que les corresponde
+        /// </summary>
+        private void recalculo()
+        {
             if (Convert.ToInt32(nudFuerza.Value / 5) != Convert.ToInt32(lbExtremoFuerza.Text)) { }
             {
                 int estFuer = Convert.ToInt32(nudFuerza.Value);
@@ -475,34 +523,6 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
                 lbExtremoEdu.Text = "" + estEdu / 5;
                 lbDificilEdu.Text = "" + estEdu / 2;
             }
-
-
-            ///esta agrupacion de ifs determina que valor le corresponde a la estadistica de Mov
-            if ((nudTam.Value > nudCons.Value) && (nudTam.Value > nudFuerza.Value))
-            {
-                lbMov.Text = "7";
-            }
-            else if ((nudTam.Value == nudCons.Value) || (nudTam.Value == nudFuerza.Value))
-            {
-                lbMov.Text = "8";
-            }
-            else if ((nudTam.Value < nudCons.Value) && (nudTam.Value < nudFuerza.Value))
-            {
-                lbMov.Text = "9";
-            }
-
-            lbVida.Text = (Convert.ToInt32(lbExtremoTam.Text) + Convert.ToInt32(lbExtremoCons.Text)) / 2 + "";
-            lbMP.Text = Convert.ToInt32(lbExtremoPod.Text) + "";
-            lbCordura.Text = Convert.ToInt32(lbExtremoPod.Text) + "";
-            lbSuerte.Text = generadorRandom(3) + "";
-
-            lbPunTrabajo.Text = Convert.ToInt32(lbExtremoEdu.Text) * 20 + "";
-            lbPuntPropios.Text = Convert.ToInt32(lbExtremoInt.Text) * 10 + "";
-
-            esquivarNumericUpDown.Value = Convert.ToInt32(lbDificilDes.Text);
-
-            comprobarTrabajo();
-            AsignarDificultad();
         }
 
 
