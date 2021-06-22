@@ -14,6 +14,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
     public partial class Cthulhu : Form
     {
         private ArrayList valHab;
+        Basededatos<Personaje> bd = new Basededatos<Personaje>("Personjes.json");
 
         public Cthulhu()
         {
@@ -36,6 +37,8 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             this.ttCthulhu.SetToolTip(this.nudEdu, "indica tu grados de estudio 50 = eso, 60 = bachiller, 70 = carrera, 80 = maseter, 90 = doctorado");
             this.ttCthulhu.SetToolTip(this.nudTam, "indica tu tamaño, no tiene que ser altura tambien puede ser peso");
             this.ttCthulhu.SetToolTip(this.nudInt, "indica los inteligente que eres");
+
+            bd.cargar();
         }
 
         /// <summary>
@@ -766,39 +769,37 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             }
             else
             {
-                personajeTableAdapter.Insert(tbNombre.Text, tbJugador.Text, Convert.ToInt32(nudEdad.Value), Convert.ToInt32(lbVida.Text),
-                Convert.ToInt32(lbMP.Text), Convert.ToInt32(lbCordura.Text), Convert.ToInt32(lbSuerte.Text),
-                Convert.ToInt32(nudFuerza.Value), Convert.ToInt32(nudDes.Value), Convert.ToInt32(nudPod.Value),
-                Convert.ToInt32(nudCons.Value), Convert.ToInt32(nudApa.Value), Convert.ToInt32(nudEdu.Value),
-                Convert.ToInt32(nudTam.Value), Convert.ToInt32(nudInt.Value), Convert.ToInt32(lbMov.Text));
 
+                Habilidades habilidades = new Habilidades(Convert.ToInt32(antropologuiaNumericUpDown.Value),
+                   Convert.ToInt32(armacortaNumericUpDown.Value), Convert.ToInt32(fusilYescopetaNumericUpDown.Value),
+                   Convert.ToInt32(arqueologuiaNumericUpDown.Value), Convert.ToInt32(arteYartesaniaNumericUpDown.Value),
+                   Convert.ToInt32(buscarlibrosNumericUpDown.Value), Convert.ToInt32(cerrajeriaNumericUpDown.Value),
+                   Convert.ToInt32(charlataneriaNumericUpDown.Value), Convert.ToInt32(cienciaNumericUpDown.Value),
+                   Convert.ToInt32(cienciasocultasNumericUpDown.Value), Convert.ToInt32(peleaNumericUpDown.Value),
+                   Convert.ToInt32(conducirautomovilNumericUpDown.Value), Convert.ToInt32(conducirmaquinariaNumericUpDown.Value),
+                   Convert.ToInt32(contavilidadNumericUpDown.Value), Convert.ToInt32(creditoNumericUpDown.Value),
+                   Convert.ToInt32(derechoNumericUpDown.Value), Convert.ToInt32(descubrirNumericUpDown.Value),
+                   Convert.ToInt32(disfrazarseNumericUpDown.Value), Convert.ToInt32(electricidadNumericUpDown.Value),
+                   Convert.ToInt32(encantoNumericUpDown.Value), Convert.ToInt32(equitacionNumericUpDown.Value),
+                   Convert.ToInt32(escucharNumericUpDown.Value), Convert.ToInt32(esquivarNumericUpDown.Value),
+                   Convert.ToInt32(historiaNumericUpDown.Value), Convert.ToInt32(intimidarNumericUpDown.Value),
+                   Convert.ToInt32(juegomanosNumericUpDown.Value), Convert.ToInt32(lanzarNumericUpDown.Value),
+                   Convert.ToInt32(mecanicaNumericUpDown.Value), Convert.ToInt32(medicinaNumericUpDown.Value),
+                   Convert.ToInt32(mitoscthulhuNumericUpDown.Value), Convert.ToInt32(nadarNumericUpDown.Value),
+                   Convert.ToInt32(naturalezaNumericUpDown.Value), Convert.ToInt32(orientarseNumericUpDown.Value),
+                   Convert.ToInt32(persuasionNumericUpDown.Value), Convert.ToInt32(pilotarNumericUpDown.Value),
+                   Convert.ToInt32(primerosauxiliosNumericUpDown.Value),
+                   Convert.ToInt32(psicoanalisisNumericUpDown.Value), Convert.ToInt32(psicologuiaNumericUpDown.Value),
+                   Convert.ToInt32(saltarNumericUpDown.Value), Convert.ToInt32(seguirrastoNumericUpDown.Value),
+                   Convert.ToInt32(sigiloNumericUpDown.Value), Convert.ToInt32(supervivenciaNumericUpDown.Value),
+                   Convert.ToInt32(tasacionNumericUpDown.Value), Convert.ToInt32(treparNumericUpDown.Value));
 
-                habilidadesTableAdapter.Insert(Convert.ToInt32(personajeTableAdapter.GetOnId()), Convert.ToInt32(antropologuiaNumericUpDown.Value),
-                    Convert.ToInt32(armacortaNumericUpDown.Value), Convert.ToInt32(fusilYescopetaNumericUpDown.Value),
-                    Convert.ToInt32(arqueologuiaNumericUpDown.Value), Convert.ToInt32(arteYartesaniaNumericUpDown.Value),
-                    Convert.ToInt32(buscarlibrosNumericUpDown.Value), Convert.ToInt32(cerrajeriaNumericUpDown.Value),
-                    Convert.ToInt32(charlataneriaNumericUpDown.Value), Convert.ToInt32(cienciaNumericUpDown.Value),
-                    Convert.ToInt32(cienciasocultasNumericUpDown.Value), Convert.ToInt32(peleaNumericUpDown.Value),
-                    Convert.ToInt32(conducirautomovilNumericUpDown.Value), Convert.ToInt32(conducirmaquinariaNumericUpDown.Value),
-                    Convert.ToInt32(contavilidadNumericUpDown.Value), Convert.ToInt32(creditoNumericUpDown.Value),
-                    Convert.ToInt32(derechoNumericUpDown.Value), Convert.ToInt32(descubrirNumericUpDown.Value),
-                    Convert.ToInt32(disfrazarseNumericUpDown.Value), Convert.ToInt32(electricidadNumericUpDown.Value),
-                    Convert.ToInt32(encantoNumericUpDown.Value), Convert.ToInt32(equitacionNumericUpDown.Value),
-                    Convert.ToInt32(escucharNumericUpDown.Value), Convert.ToInt32(esquivarNumericUpDown.Value),
-                    Convert.ToInt32(historiaNumericUpDown.Value), Convert.ToInt32(intimidarNumericUpDown.Value),
-                    Convert.ToInt32(juegomanosNumericUpDown.Value), Convert.ToInt32(lanzarNumericUpDown.Value),
-                    Convert.ToInt32(mecanicaNumericUpDown.Value), Convert.ToInt32(medicinaNumericUpDown.Value),
-                    Convert.ToInt32(mitoscthulhuNumericUpDown.Value), Convert.ToInt32(nadarNumericUpDown.Value),
-                    Convert.ToInt32(naturalezaNumericUpDown.Value), Convert.ToInt32(orientarseNumericUpDown.Value),
-                    Convert.ToInt32(persuasionNumericUpDown.Value), Convert.ToInt32(pilotarNumericUpDown.Value),
-                    Convert.ToInt32(primerosauxiliosNumericUpDown.Value),
-                    Convert.ToInt32(psicoanalisisNumericUpDown.Value), Convert.ToInt32(psicologuiaNumericUpDown.Value),
-                    Convert.ToInt32(saltarNumericUpDown.Value), Convert.ToInt32(seguirrastoNumericUpDown.Value),
-                    Convert.ToInt32(sigiloNumericUpDown.Value), Convert.ToInt32(supervivenciaNumericUpDown.Value),
-                    Convert.ToInt32(tasacionNumericUpDown.Value), Convert.ToInt32(treparNumericUpDown.Value));
+                Personaje personaje = new Personaje(tbNombre.Text, cbTrabajo.Text, tbJugador.Text, Convert.ToInt32(nudEdad.Value),
+                    Convert.ToInt32(nudFuerza.Value), Convert.ToInt32(nudDes.Value), Convert.ToInt32(nudPod.Value),
+                    Convert.ToInt32(nudCons.Value), Convert.ToInt32(nudApa.Value), Convert.ToInt32(nudEdu.Value),
+                    Convert.ToInt32(nudTam.Value), Convert.ToInt32(nudInt.Value), habilidades);
 
-                equipadoTableAdapter.Insert(Convert.ToInt32(personajeTableAdapter.GetOnId()), Convert.ToInt32(id_armaTextBox.Text),
-                    Convert.ToInt32(lbDificulNormal.Text), Convert.ToInt32(lbDificulDificil.Text), Convert.ToInt32(lbDificulExtremo.Text));
+                bd.insertar(personaje);
 
                 MessageBox.Show("El personaje se a creado con exito", "creada con exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
