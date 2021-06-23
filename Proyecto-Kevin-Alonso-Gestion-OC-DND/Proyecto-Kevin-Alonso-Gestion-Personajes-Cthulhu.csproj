@@ -63,16 +63,6 @@
       <DependentUpon>añadirArma.cs</DependentUpon>
     </Compile>
     <Compile Include="Personaje.cs" />
-    <Compile Include="CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-    </Compile>
-    <Compile Include="CrystalReport2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport2.rpt</DependentUpon>
-    </Compile>
     <Compile Include="Cthulhu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,23 +75,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="EditarPersonajes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditarPersonajes.Designer.cs">
       <DependentUpon>EditarPersonajes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Infome con graficos.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Infome con graficos.rpt</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="llamada_de_cthulhuDataSet.cs">
       <DependentUpon>llamada_de_cthulhuDataSet.xsd</DependentUpon>
@@ -130,12 +108,6 @@
     <Compile Include="splashScreen.Designer.cs">
       <DependentUpon>splashScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="VerPersonaje.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VerPersonaje.Designer.cs">
-      <DependentUpon>VerPersonaje.cs</DependentUpon>
-    </Compile>
     <Compile Include="verPersonaje1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -145,29 +117,14 @@
     <EmbeddedResource Include="añadirArma.resx">
       <DependentUpon>añadirArma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport2.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Cthulhu.resx">
       <DependentUpon>Cthulhu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EditarPersonajes.resx">
       <DependentUpon>EditarPersonajes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Infome con graficos.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Infome con graficos.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonajesDeCadaJugador.resx">
       <DependentUpon>PersonajesDeCadaJugador.cs</DependentUpon>
@@ -179,9 +136,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="splashScreen.resx">
       <DependentUpon>splashScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VerPersonaje.resx">
-      <DependentUpon>VerPersonaje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="verPersonaje.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

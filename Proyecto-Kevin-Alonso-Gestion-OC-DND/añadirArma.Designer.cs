@@ -164,7 +164,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // 
             // cbTipoArma
             // 
-            this.cbTipoArma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            //this.cbTipoArma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTipoArma.FormattingEnabled = true;
             this.cbTipoArma.Items.AddRange(new object[] {
             "Arma Corta(pistolas)",
@@ -187,7 +187,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // llamada_de_cthulhuDataSet
             // 
             this.llamada_de_cthulhuDataSet.DataSetName = "llamada_de_cthulhuDataSet";
-            this.llamada_de_cthulhuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.llamada_de_cthulhuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // equipoBindingSource
             // 
@@ -210,7 +210,7 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             // añadirArma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 136);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cbTipoArma);

@@ -12,6 +12,9 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
 {
     public partial class añadirArma : Form
     {
+
+        Basededatos<Armas> bd = new Basededatos<Armas>("Armas.json");
+
         public añadirArma()
         {
             InitializeComponent();
@@ -36,7 +39,10 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
         {
             if (tipoArma() != -1)
             {
-                equipoTableAdapter.Insert(tbNombre.Text, tbDaño.Text, tbAlcance.Text, tbNumAtac.Text, Convert.ToInt32(nudMunicion.Value), Convert.ToInt32(nudAveria.Value), tipoArma());
+                Armas armas = new Armas(tbNombre.Text, tbDaño.Text, tbAlcance.Text,
+                    tbNumAtac.Text, nudMunicion.Value + "", nudAveria.Value + "", tipoArma());
+
+                bd.insertar(armas);
 
                 MessageBox.Show("Arma creada con exito", "creada con exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -46,9 +52,6 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
                 nudMunicion.Value = 0;
                 nudAveria.Value = 0;
                 cbTipoArma.Text = "";
-
-
-
             }
             else
             {

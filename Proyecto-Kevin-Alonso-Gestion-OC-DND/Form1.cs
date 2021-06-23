@@ -79,19 +79,6 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             cthulhu.Show();
         }
 
-
-        /// <summary>
-        /// Crea el formulario que contiene el informe de la hoja de personajes
-        /// </summary>
-        /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
-        private void verPersonajeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            VerPersonaje verAlPersoje = new VerPersonaje();
-            verAlPersoje.MdiParent = this;
-            verAlPersoje.Show();
-        }
-
         private void listaDePersonajesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EditarPersonajes listaP = new EditarPersonajes();
@@ -107,13 +94,6 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
                 MdiChildren[0].Close();
                 i++;
             }
-        }
-
-        private void informesConGraficosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form2 listaP = new Form2();
-            listaP.MdiParent = this;
-            listaP.Show();
         }
 
         private void verticalmenteToolStripMenuItem_Click(object sender, EventArgs e)

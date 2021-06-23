@@ -41,12 +41,10 @@ D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion
 D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csprojAssemblyReference.cache
 D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto_Kevin_Alonso_Gestion_OC_DND.Cthulhu.resources
 D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto_Kevin_Alonso_Gestion_OC_DND.Form1.resources
-D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto_Kevin_Alonso_Gestion_OC_DND.Form2.resources
 D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto_Kevin_Alonso_Gestion_OC_DND.EditarPersonajes.resources
 D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto_Kevin_Alonso_Gestion_OC_DND.PersonajesDeCadaJugador.resources
 D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto_Kevin_Alonso_Gestion_OC_DND.Properties.Resources.resources
 D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto_Kevin_Alonso_Gestion_OC_DND.splashScreen.resources
-D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto_Kevin_Alonso_Gestion_OC_DND.VerPersonaje.resources
 D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.GenerateResource.cache
 D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.CoreCompileInputs.cache
 D:\Documentos\GitHub\Creador-de-personajes-Cthulhu\Proyecto-Kevin-Alonso-Gestion-OC-DND\obj\Release\Proyecto-Kevin-Alonso-Gestion-Personajes-Cthulhu.csproj.CopyComplete

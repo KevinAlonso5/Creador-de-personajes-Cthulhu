@@ -164,10 +164,10 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
         public String numAtaques;
         public String municion;
         public String averia;
-        public Boolean cortoLargo;
+        public int cortoLargo;
 
         public Armas (string nombre, string daño, string alcance,
-            string numAtaques, string municion, string averia, Boolean cortoLargo)
+            string numAtaques, string municion, string averia, int cortoLargo)
         {
             this.nombre = nombre;
             this.daño = daño;
@@ -200,9 +200,20 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             try
             {
                 string archivo = File.ReadAllText(ruta);
+                archivo = archivo+ lineasAnteriores();
                 valores = JsonConvert.DeserializeObject<List<T>>(archivo);
             }
             catch (Exception) { }
+        }
+
+        public string lineasAnteriores()
+        {
+            try
+            {
+                string archivo = File.ReadAllText(ruta);
+                return archivo;
+            }
+            catch (Exception) { return ""; }
         }
 
         public void insertar(T nuevo)
