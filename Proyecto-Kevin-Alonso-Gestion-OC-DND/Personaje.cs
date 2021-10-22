@@ -206,14 +206,16 @@ namespace Proyecto_Kevin_Alonso_Gestion_OC_DND
             catch (Exception) { }
         }
 
-        public string lineasAnteriores()
+        public List<T> lineasAnteriores()
         {
             try
             {
                 string archivo = File.ReadAllText(ruta);
-                return archivo;
+                archivo = archivo + lineasAnteriores();
+                List<T> salida = JsonConvert.DeserializeObject<List<T>>(archivo);
+                return salida;
             }
-            catch (Exception) { return ""; }
+            catch (Exception) { return null; }
         }
 
         public void insertar(T nuevo)
